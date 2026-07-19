@@ -1,1 +1,1 @@
-# study-of-algorithms
+# Repositório de Estudos - LeetCode e Algoritmos
