@@ -1,8 +1,8 @@
 # Índice de Problemas
 
-> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-24. Não edite à mão.
+> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-25. Não edite à mão.
 
-**Total: 3** (🟢 easy: 2 · 🟡 medium: 1 · 🔴 hard: 0)
+**Total: 4** (🟢 easy: 2 · 🟡 medium: 2 · 🔴 hard: 0)
 
 ## Arrays e Hashing (1)
 
@@ -15,6 +15,12 @@
 | # | Problema | Dificuldade |
 |---|---|---|
 | 0153 | [Find Minimum in Rotated Sorted Array](problemas/05_busca_binaria/medium/0153_find_minimum_in_rotated_sorted_array.md) | 🟡 medium |
+
+## Linked List (1)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 0142 | [Linked List Cycle II](problemas/06_linked_list/medium/0142_linked_list_cycle_ii.md) | 🟡 medium |
 
 ## Matemática e Geometria (1)
 
