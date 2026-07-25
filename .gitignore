@@ -1,1 +1,11 @@
-_pipeline
+# Dados baixados do LeetCode (enunciados são conteúdo protegido — não redistribuir no repositório)
+02_estruturas_e_algoritmos/_pipeline/lotes/
+02_estruturas_e_algoritmos/_pipeline/enunciados/
+
+# Artefatos de execução do pipeline
+02_estruturas_e_algoritmos/_pipeline/logs/
+02_estruturas_e_algoritmos/_pipeline/rejeitados/
+
+# Python
+__pycache__/
+*.pyc
