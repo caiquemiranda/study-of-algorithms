@@ -1,111 +1,161 @@
 # 10 — Backtracking
 
-> Explorar todas as possibilidades construindo a solução passo a passo — e desfazendo o passo quando ele leva a um beco. Problemas em [`../problemas/10_backtracking/`](../problemas/10_backtracking/).
+> Construir a solução passo a passo e desfazer o passo que leva a beco sem saída. Soluções em [`../problemas/10_backtracking/`](../problemas/10_backtracking/).
 
-## Conceito
+## 1. Conceito Central e Analogia Didática
 
-Backtracking é DFS no **espaço de decisões**: em cada nível você faz uma escolha, recursa, e **desfaz** a escolha (o "back") para tentar a próxima. É a técnica para problemas de enumeração onde não há atalho polinomial: subconjuntos, permutações, combinações, tabuleiros.
+- É DFS no **espaço de decisões**: em cada nível, faça uma escolha → recurse → **desfaça** (o "back") → tente a próxima.
+- O molde universal tem 3 verbos: **escolher, explorar, desescolher** — o `pop()`/desmarcar é o coração do padrão.
+- **Poda (pruning)** separa força bruta inviável de solução aceita: aborte o ramo assim que ele se tornar inválido.
 
-**O molde universal:**
+**Analogia:** labirinto com giz: em cada bifurcação você marca o corredor escolhido; deu em parede, **volta apagando a marca** e tenta o próximo corredor. O giz apagado é o estado desfeito — sem ele, os caminhos se contaminam.
+
+## 2. Como Reconhecer (Padrões de Enunciado)
+
+- Se pede "**TODAS** as combinações/permutações/subconjuntos/soluções" → backtracking.
+- Se pede "gere todas as formas **válidas** de..." (parênteses, partições) → backtracking com poda de validade.
+- Se é tabuleiro/grade com restrições (N-Queens, Sudoku, Word Search) → backtracking com marcação de visitados.
+- Se `n ≤ ~20` nas constraints → o custo exponencial é esperado; pode enumerar.
+- Ordem importa? **Permutação** (vetor `usado[]`). Ordem não importa? **Combinação** (índice `start`).
+
+## 3. Templates de Código
+
+### Subsets (decisão binária por elemento)
+
+```java
+// Java — cada elemento tem 2 destinos: entra ou não entra; 2^n folhas
+public List<List<Integer>> subsets(int[] nums) {
+    List<List<Integer>> res = new ArrayList<>();
+    backtrack(nums, 0, new ArrayList<>(), res);
+    return res;
+}
+
+private void backtrack(int[] nums, int i, List<Integer> atual, List<List<Integer>> res) {
+    if (i == nums.length) {
+        res.add(new ArrayList<>(atual));   // CÓPIA: 'atual' será mutada pelos próximos ramos
+        return;
+    }
+    atual.add(nums[i]);                    // ramo 1: escolhe nums[i]
+    backtrack(nums, i + 1, atual, res);
+    atual.remove(atual.size() - 1);        // DESFAZ: sem isso o ramo 2 herda a escolha do ramo 1
+    backtrack(nums, i + 1, atual, res);    // ramo 2: não escolhe nums[i]
+}
 ```
-def backtrack(estado, escolhas):
-    if solucao_completa(estado): registra(estado); return
-    for escolha in escolhas_validas(estado):
-        aplica(escolha)          # escolher
-        backtrack(...)           # explorar
-        desfaz(escolha)          # desescolher  ← o coração do padrão
-```
-
-**Poda (pruning)** é o que separa força bruta inviável de solução aceita: aborte o ramo assim que ele se torna inválido (soma estourou, rainha atacada, prefixo não existe na trie).
-
-**As três famílias:**
-- **Subsets**: cada elemento entra ou não entra (2ⁿ folhas)
-- **Combinações**: subsets com tamanho/critério fixo; use índice `start` para não repetir ordem
-- **Permutações**: ordem importa; use vetor `usado[]` (n! folhas)
-
-## Como reconhecer no enunciado
-
-- "**todas** as combinações/permutações/subconjuntos/soluções"
-- "gere todas as formas válidas de..." (parênteses, partições palindrômicas)
-- Tabuleiro/grade com restrições (N-Queens, Sudoku, Word Search)
-- n pequeno no enunciado (n ≤ ~20) — o custo exponencial é esperado
-
-## Templates
 
 ```python
-# Subsets — decisão binária por elemento
 def subsets(nums):
     res, atual = [], []
     def bt(i):
         if i == len(nums):
-            res.append(atual[:])          # cópia!
+            res.append(atual[:])       # atual[:] copia — guardar 'atual' direto quebraria tudo
             return
-        atual.append(nums[i]); bt(i + 1); atual.pop()   # com nums[i]
-        bt(i + 1)                                        # sem nums[i]
+        atual.append(nums[i])          # escolher
+        bt(i + 1)                      # explorar
+        atual.pop()                    # desescolher (o "back" do backtracking)
+        bt(i + 1)                      # ramo sem nums[i]
     bt(0)
-    return res
-
-# Combination Sum — reuso permitido, poda por soma
-def combination_sum(cands, alvo):
-    res, atual = [], []
-    cands.sort()
-    def bt(start, resto):
-        if resto == 0:
-            res.append(atual[:]); return
-        for i in range(start, len(cands)):
-            if cands[i] > resto:
-                break                     # poda: ordenado, ninguém à frente serve
-            atual.append(cands[i])
-            bt(i, resto - cands[i])       # i (não i+1): pode reusar
-            atual.pop()
-    bt(0, alvo)
-    return res
-
-# Permutações com duplicatas — ordenar + pular repetido no mesmo nível
-def permute_unique(nums):
-    nums.sort()
-    res, atual, usado = [], [], [False] * len(nums)
-    def bt():
-        if len(atual) == len(nums):
-            res.append(atual[:]); return
-        for i in range(len(nums)):
-            if usado[i]:
-                continue
-            if i > 0 and nums[i] == nums[i-1] and not usado[i-1]:
-                continue                  # duplicata no mesmo nível
-            usado[i] = True; atual.append(nums[i])
-            bt()
-            atual.pop(); usado[i] = False
-    bt()
     return res
 ```
 
-## Complexidade típica
+### Combination Sum (reuso permitido + poda por ordenação)
 
-Subsets O(2ⁿ·n) · permutações O(n!·n) · com poda, muito menos na prática — mas o pior caso continua exponencial. Espaço O(profundidade).
+```python
+def combination_sum(cands, alvo):
+    cands.sort()                               # ordenar habilita a poda por break
+    res, atual = [], []
+    def bt(start, resto):
+        if resto == 0:
+            res.append(atual[:])
+            return
+        for i in range(start, len(cands)):
+            if cands[i] > resto:
+                break                          # poda: ordenado, todos à frente também estouram
+            atual.append(cands[i])
+            bt(i, resto - cands[i])            # 'i' (não i+1): o MESMO número pode repetir
+            atual.pop()
+    bt(0, alvo)
+    return res
+```
 
-## Erros comuns
+### Permutações com duplicatas
 
-- `res.append(atual)` sem copiar (`atual[:]`) — todas as respostas viram a mesma lista mutável
-- Esquecer o `pop()`/desfazer (estado vaza entre ramos)
-- Duplicatas: não ordenar + não pular `nums[i] == nums[i-1]` no mesmo nível
-- Em grade: não marcar/desmarcar a célula visitada
-- Podar de menos (TLE) ou podar errado (perde soluções) — justifique cada poda
+```java
+// Java — ordenar + pular repetido no MESMO nível elimina permutações idênticas
+public List<List<Integer>> permuteUnique(int[] nums) {
+    Arrays.sort(nums);
+    List<List<Integer>> res = new ArrayList<>();
+    backtrack(nums, new boolean[nums.length], new ArrayList<>(), res);
+    return res;
+}
 
-## Problemas recomendados
+private void backtrack(int[] nums, boolean[] usado, List<Integer> atual, List<List<Integer>> res) {
+    if (atual.size() == nums.length) {
+        res.add(new ArrayList<>(atual));
+        return;
+    }
+    for (int i = 0; i < nums.length; i++) {
+        if (usado[i]) continue;
+        // duplicata no mesmo nível: só permite a 1ª cópia livre (a anterior precisa estar em uso)
+        if (i > 0 && nums[i] == nums[i - 1] && !usado[i - 1]) continue;
+        usado[i] = true;  atual.add(nums[i]);
+        backtrack(nums, usado, atual, res);
+        atual.remove(atual.size() - 1);  usado[i] = false;   // desfaz o par de marcações
+    }
+}
+```
 
-| Problema | Dificuldade |
-|---|---|
-| 78. Subsets | 🟡 medium |
-| 39. Combination Sum | 🟡 medium |
-| 46. Permutations | 🟡 medium |
-| 90. Subsets II | 🟡 medium |
-| 40. Combination Sum II | 🟡 medium |
-| 131. Palindrome Partitioning | 🟡 medium |
-| 17. Letter Combinations of a Phone Number | 🟡 medium |
-| 79. Word Search | 🟡 medium |
-| 51. N-Queens | 🔴 hard |
+## 4. Walkthrough Visual (Teste de Mesa)
 
-## Conexão com backend
+`subsets([1, 2])` — árvore de decisões:
 
-Resolvedores de dependências (Maven escolhendo versões compatíveis), planejadores de query em bancos, alocação de recursos com restrições e geradores de teste (property-based testing) usam busca com backtracking e poda. Se a memoization elimina o recálculo de subproblemas repetidos, o backtracking virou DP — ver [13](13_programacao_dinamica_1d.md).
+| Passo | i | decisão | atual | ação |
+|---|---|---|---|---|
+| 1 | 0 | escolhe 1 | `[1]` | desce |
+| 2 | 1 | escolhe 2 | `[1,2]` | i==2 → grava `[1,2]` |
+| 3 | 1 | pop 2, não escolhe | `[1]` | i==2 → grava `[1]` |
+| 4 | 0 | pop 1, não escolhe | `[]` | desce |
+| 5 | 1 | escolhe 2 | `[2]` | grava `[2]` |
+| 6 | 1 | pop 2, não escolhe | `[]` | grava `[]` |
+
+- Resultado: `[[1,2], [1], [2], []]` — 2² = 4 subconjuntos ✔ — repare no `pop` antes de cada ramo alternativo.
+
+## 5. Complexidade (Tempo e Espaço)
+
+| Família | Tempo | Motivo |
+|---|---|---|
+| Subsets | O(2ⁿ · n) | 2ⁿ folhas × custo de copiar |
+| Permutações | O(n! · n) | n! ordens possíveis |
+| Combinações | O(C(n,k) · k) | escolhas sem ordem |
+| Espaço | O(profundidade) | pilha + caminho atual |
+
+- Poda reduz o caso médio drasticamente, mas o **pior caso continua exponencial** — é a natureza do problema, não defeito seu.
+
+## 6. Pegadinhas e Erros Comuns
+
+- `res.add(atual)` **sem copiar** → todas as respostas apontam para a mesma lista mutável (Java e Python).
+- Esquecer o `pop()`/`usado[i] = false` → estado vaza entre ramos e as respostas saem contaminadas.
+- Duplicatas: não ordenar + não pular `nums[i] == nums[i-1]` no mesmo nível → respostas repetidas.
+- Word Search: esquecer de **desmarcar** a célula da grade ao retornar.
+- **Java**: `atual.remove(valor)` faz autoboxing e remove por OBJETO — use `remove(atual.size() - 1)` por índice.
+- **Python**: passar `atual` como default mutável de parâmetro (`def bt(atual=[])`) — o default é compartilhado entre chamadas.
+- Podar de menos → TLE; podar "de mais" sem justificar → perde soluções. Toda poda precisa de argumento.
+
+## 7. Aplicações no Mundo Real (Backend)
+
+- **Resolvedores de dependência**: Maven/pip escolhendo versões compatíveis exploram e retrocedem exatamente assim.
+- **Planejador de queries (PostgreSQL)**: enumeração de ordens de join com poda por custo estimado.
+- **Alocação com restrições**: escala de turnos, agendamento de recursos, configuração válida de infraestrutura.
+- **Property-based testing**: geração e encolhimento (shrinking) de casos de teste percorre espaço de estados com retrocesso.
+- Se subproblemas se repetem, memoize e vira **DP** — ver [13_programacao_dinamica_1d](13_programacao_dinamica_1d.md).
+
+## 8. Problemas Recomendados (Trilha de Estudo)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 78 | [Subsets](https://leetcode.com/problems/subsets/) | 🟡 Medium |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | 🟡 Medium |
+| 46 | [Permutations](https://leetcode.com/problems/permutations/) | 🟡 Medium |
+| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | 🟡 Medium |
+| 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | 🟡 Medium |
+| 79 | [Word Search](https://leetcode.com/problems/word-search/) | 🟡 Medium |
+| 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | 🔴 Hard |

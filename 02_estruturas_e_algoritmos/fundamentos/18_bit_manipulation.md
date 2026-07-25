@@ -1,93 +1,152 @@
 # 18 — Bit Manipulation
 
-> Operar diretamente nos bits: o nível mais baixo antes do hardware. Problemas em [`../problemas/18_bit_manipulation/`](../problemas/18_bit_manipulation/).
+> Operar direto nos bits: o último nível antes do hardware. Soluções em [`../problemas/18_bit_manipulation/`](../problemas/18_bit_manipulation/).
 
-## Conceito
+## 1. Conceito Central e Analogia Didática
 
-Inteiros são vetores de bits (Fase 1.1: binário, complemento de dois). Os operadores: `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<`/`>>` (shifts).
+- Inteiros são vetores de bits (complemento de dois — Fase 1.1); operadores: `&` `|` `^` `~` `<<` `>>`.
+- Identidades que resolvem problemas: `x ^ x = 0` (XOR cancela pares), `x & (x-1)` apaga o bit 1 mais baixo, `x & (-x)` isola-o, `x | (1<<k)` liga o bit k.
+- **Bitmask como conjunto**: um int de 32 bits representa 32 flags booleanas — base de permissões e DP com bitmask.
 
-**As identidades que resolvem problemas:**
-- `x ^ x = 0` e `x ^ 0 = x` → XOR de tudo cancela os pares e **sobra o ímpar** (Single Number)
-- XOR é comutativo/associativo → a ordem não importa
-- `x & (x - 1)` **apaga o bit 1 mais baixo** → contar bits, testar potência de 2 (`x & (x-1) == 0`)
-- `x & (-x)` **isola o bit 1 mais baixo**
-- `x >> k & 1` lê o k-ésimo bit; `x | (1 << k)` liga; `x & ~(1 << k)` desliga
-- Soma sem `+`: `a ^ b` é a soma sem carry; `(a & b) << 1` é o carry — repita até o carry zerar
-- **Bitmask como conjunto**: um int de n bits representa um subconjunto de n itens — base da DP com bitmask e de flags de permissão
+**Analogia:** painel de 32 interruptores numa placa: `|` liga um interruptor específico, `&` testa se está ligado, `^` inverte, e a "mágica" do XOR em par é que ligar e desligar o mesmo interruptor duas vezes volta ao estado inicial — sobra aceso só o que foi tocado uma vez.
 
-**Complemento de dois** (por que `-x = ~x + 1`): o negativo é o complemento que faz a soma dar zero com overflow. É por isso que `x & (-x)` isola o último bit.
+## 2. Como Reconhecer (Padrões de Enunciado)
 
-## Como reconhecer no enunciado
+- Se diz "todos aparecem **duas vezes, exceto um**" → XOR de tudo (os pares se cancelam).
+- Se pede "**conte os bits 1**" / "é potência de 2?" → `x & (x-1)`.
+- Se pede "some **sem usar +**" → XOR (soma sem carry) + AND<<1 (carry), repetir até zerar.
+- Se pede "número **faltando** em 0..n" → XOR de índices com valores.
+- Se o estado é pequeno (n ≤ 20) e precisa marcar subconjuntos → bitmask.
 
-- "todos aparecem duas vezes, exceto um" → XOR
-- "conte os bits 1", "potência de dois", "sem usar +/-" → identidades acima
-- "sem espaço extra" em problema de paridade/duplicata → pense em XOR
-- Estados pequenos (n ≤ 20) para marcar visitados/subconjuntos → bitmask
+## 3. Templates de Código
 
-## Templates
+### XOR para achar o único (Single Number / Missing Number)
+
+```java
+// Java — XOR é comutativo e associativo: a ordem não importa, os pares somem
+public int singleNumber(int[] nums) {
+    int res = 0;                 // 0 é neutro do XOR: x ^ 0 = x
+    for (int n : nums) {
+        res ^= n;                // cada par a^a vira 0; sobra exatamente o ímpar
+    }
+    return res;
+}
+
+public int missingNumber(int[] nums) {
+    int res = nums.length;               // começa com o índice n (que não tem par no loop)
+    for (int i = 0; i < nums.length; i++) {
+        res ^= i ^ nums[i];              // índices 0..n e valores 0..n (menos o faltante) se cancelam
+    }
+    return res;                          // sobra o número que nunca apareceu
+}
+```
 
 ```python
-# Single Number — XOR cancela pares, O(n)/O(1)
 def single_number(nums):
     res = 0
     for n in nums:
-        res ^= n
-    return res
-
-# Contar bits 1 (Hamming weight) — apaga o mais baixo por iteração
-def hamming_weight(n):
-    cont = 0
-    while n:
-        n &= n - 1
-        cont += 1
-    return cont
-
-# Counting Bits 0..n — DP com offset: bits(i) = bits(i >> 1) + (i & 1)
-def count_bits(n):
-    dp = [0] * (n + 1)
-    for i in range(1, n + 1):
-        dp[i] = dp[i >> 1] + (i & 1)
-    return dp
-
-# Missing Number — XOR dos índices com os valores
-def missing_number(nums):
-    res = len(nums)
-    for i, n in enumerate(nums):
-        res ^= i ^ n
-    return res
-
-# Reverse Bits (32 bits)
-def reverse_bits(n):
-    res = 0
-    for _ in range(32):
-        res = (res << 1) | (n & 1)
-        n >>= 1
+        res ^= n         # pares se anulam; o solitário sobrevive
     return res
 ```
 
-## Complexidade típica
+### Contar bits (Hamming Weight + Counting Bits com DP)
 
-O(1) por operação; O(n) para varrer. Bitmask DP: O(2ⁿ·n) — viável até n ≈ 20.
+```java
+// Java — n & (n-1) apaga o 1 mais baixo: itera só o nº de bits ligados, não 32 vezes
+public int hammingWeight(int n) {
+    int cont = 0;
+    while (n != 0) {
+        n &= (n - 1);    // cada passada elimina exatamente um bit 1
+        cont++;
+    }
+    return cont;
+}
 
-## Erros comuns
+// dp[i] = dp[i >> 1] + (i & 1): o nº de bits de i é o de i/2 mais o bit que caiu fora
+public int[] countBits(int n) {
+    int[] dp = new int[n + 1];
+    for (int i = 1; i <= n; i++) {
+        dp[i] = dp[i >> 1] + (i & 1);   // reaproveita o resultado já calculado (DP + bits)
+    }
+    return dp;
+}
+```
 
-- Precedência: `x & 1 == 0` em Python/Java é `x & (1 == 0)` — **use parênteses** `(x & 1) == 0`
-- Python tem inteiros infinitos: algoritmos que dependem de 32 bits (reverse bits, soma sem `+` com negativos) precisam de máscara `& 0xFFFFFFFF`
-- `>>` em Java é aritmético (propaga sinal); `>>>` é o lógico — em C++ depende do tipo
-- Confundir `&` com `&&` (bit a bit vs lógico)
+```python
+def hamming_weight(n):
+    cont = 0
+    while n:
+        n &= n - 1       # apaga o bit 1 mais baixo por iteração
+        cont += 1
+    return cont
 
-## Problemas recomendados
+def count_bits(n):
+    dp = [0] * (n + 1)
+    for i in range(1, n + 1):
+        dp[i] = dp[i >> 1] + (i & 1)   # i>>1 já foi resolvido: transição O(1)
+    return dp
+```
 
-| Problema | Dificuldade |
-|---|---|
-| 136. Single Number | 🟢 easy |
-| 191. Number of 1 Bits | 🟢 easy |
-| 338. Counting Bits | 🟢 easy |
-| 190. Reverse Bits | 🟢 easy |
-| 268. Missing Number | 🟢 easy |
-| 371. Sum of Two Integers | 🟡 medium |
-| 7. Reverse Integer | 🟡 medium |
+### Soma sem `+` (o mecanismo do somador da CPU)
 
-## Conexão com backend
+```python
+def get_sum(a, b):
+    MASK = 0xFFFFFFFF                     # Python tem int infinito: simula 32 bits na mão
+    while b & MASK:
+        carry = (a & b) << 1              # AND acha as posições que geram "vai um"
+        a = (a ^ b) & MASK                # XOR soma ignorando o carry
+        b = carry & MASK                  # o carry vira a nova parcela, até se esgotar
+    return (a & MASK) if a <= 0x7FFFFFFF else ~((a ^ MASK) & MASK)  # reinterpreta negativo
+```
 
-Bits estão em todo lugar do backend real: **flags de permissão** (`chmod 755` é uma bitmask — Fase 0.1), máscaras de sub-rede/CIDR (Fase 1.4), headers de protocolo binário (o frame do WebSocket tem bits de opcode e mask — Fase 4.14), Bloom filters, `EnumSet` do Java, e feature flags compactas. Quem lê bitmask lê protocolo de rede no Wireshark.
+## 4. Walkthrough Visual (Teste de Mesa)
+
+`singleNumber([4, 1, 2, 1, 2])`
+
+| n | res (binário) antes | res ^= n | res após |
+|---|---|---|---|
+| 4 | 000 | 000 ^ 100 | 100 (4) |
+| 1 | 100 | 100 ^ 001 | 101 (5) |
+| 2 | 101 | 101 ^ 010 | 111 (7) |
+| 1 | 111 | 111 ^ 001 | 110 (6) |
+| 2 | 110 | 110 ^ 010 | 100 (**4**) ✔ |
+
+- Os pares 1^1 e 2^2 se cancelaram em qualquer ordem; sobrou o 4 — sem set, sem espaço extra.
+
+## 5. Complexidade (Tempo e Espaço)
+
+| Operação | Complexidade | Motivo |
+|---|---|---|
+| Operador bit a bit | O(1) | instrução única de CPU |
+| Varredura com XOR | O(n), espaço O(1) | uma passada, um acumulador |
+| Hamming weight | O(bits ligados) | `n & (n-1)` pula os zeros |
+| DP bitmask | O(2ⁿ · n) | viável até n ≈ 20 |
+
+## 6. Pegadinhas e Erros Comuns
+
+- **Precedência**: `x & 1 == 0` avalia `1 == 0` primeiro (Java e Python!) → sempre `(x & 1) == 0`.
+- **Java**: `>>` é aritmético (propaga o sinal); `>>>` é o shift lógico — em números negativos a diferença é abismal.
+- **Python**: int é infinito → algoritmos de 32 bits (soma sem `+`, reverse bits) exigem máscara `& 0xFFFFFFFF` e reinterpretação do negativo.
+- Confundir `&`/`|` (bit a bit) com `&&`/`||` (lógico) em Java — compila em `boolean` e muda semântica (sem curto-circuito).
+- `x << 1` estoura int silenciosamente em Java — para contagens grandes, `long`.
+- Esquecer que `~x = -x - 1` (complemento de dois) ao "inverter flags" — para limpar um bit use `x & ~(1 << k)`, não `~`.
+
+## 7. Aplicações no Mundo Real (Backend)
+
+- **Permissões**: `chmod 755` é bitmask pura (rwx = 3 bits); flags de feature compactas e `EnumSet` do Java.
+- **Redes**: máscara de sub-rede/CIDR é AND bit a bit (Fase 1.4); o frame do WebSocket carrega opcode e mask em bits (pilar 4.14).
+- **Bancos**: bitmap indexes (Postgres usa bitmap scans para combinar índices com AND/OR de bitmaps).
+- **Bloom filter**: k bits ligados por hash — dedup e cache negativo (Fase 2.2, Vol. 2 E.2).
+- Quem lê bitmask lê **protocolo binário no Wireshark** — a ponte direta com seu mundo de automação (Modbus/BACnet são campos de bits).
+
+## 8. Problemas Recomendados (Trilha de Estudo)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 136 | [Single Number](https://leetcode.com/problems/single-number/) | 🟢 Easy |
+| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 🟢 Easy |
+| 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | 🟢 Easy |
+| 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 🟢 Easy |
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | 🟢 Easy |
+| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | 🟡 Medium |
+| 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 🟡 Medium |

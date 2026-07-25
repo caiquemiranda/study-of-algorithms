@@ -1,90 +1,129 @@
 # 02 — Two Pointers
 
-> Dois índices percorrendo a estrutura de forma coordenada, eliminando o loop aninhado. Problemas em [`../problemas/02_two_pointers/`](../problemas/02_two_pointers/).
+> Dois índices coordenados eliminam o loop aninhado. Soluções em [`../problemas/02_two_pointers/`](../problemas/02_two_pointers/).
 
-## Conceito
+## 1. Conceito Central e Analogia Didática
 
-Em vez de testar todos os pares (O(n²)), dois ponteiros se movem segundo uma **regra de decisão** que descarta candidatos com segurança. Funciona quando existe **monotonicidade**: mover um ponteiro numa direção só melhora (ou só piora) o critério — geralmente porque o array está **ordenado** ou porque a resposta tem estrutura simétrica.
+- Dois ponteiros se movem segundo uma **regra de descarte**: cada movimento elimina candidatos com segurança, sem testar todos os pares.
+- Só funciona com **monotonicidade**: mover o ponteiro numa direção só melhora (ou só piora) o critério — geralmente porque o array está **ordenado**.
+- Três variantes: **pontas opostas** (convergem), **leitor/escritor** (mesma direção), **fast & slow** (velocidades diferentes — ver [06_linked_list](06_linked_list.md)).
 
-**As três variantes:**
-1. **Pontas opostas (convergentes)**: `esq` no início, `dir` no fim, movem-se um em direção ao outro. Ex.: par com soma alvo em array ordenado, palíndromo, container com mais água.
-2. **Mesma direção (leitor/escritor)**: um ponteiro lê, outro marca a posição de escrita. Ex.: remover duplicatas in-place, mover zeros.
-3. **Velocidades diferentes (fast & slow / Floyd)**: um anda 1, outro anda 2. Detecta ciclo, encontra o meio de lista ligada. (Detalhes em [06_linked_list](06_linked_list.md).)
+**Analogia:** dois seguranças fechando um corredor pelas duas pontas. A cada passo, um deles decide avançar sabendo que ninguém ficou para trás sem ser checado — no fim, se encontraram e o corredor inteiro foi coberto numa única passada.
 
-## Como reconhecer no enunciado
+## 2. Como Reconhecer (Padrões de Enunciado)
 
-- Array **ordenado** + "encontre par/tripla com soma X"
-- "in-place, O(1) de espaço extra"
-- Palíndromos e comparações simétricas
-- "remova/compacte elementos mantendo ordem"
-- Se o array não está ordenado e a posição não importa: **ordene primeiro** e avalie se two pointers se aplica
+- Se o problema dá **array ordenado** e pede "par/tripla com soma X" → pontas opostas.
+- Se exige **"in-place, O(1) de espaço extra"** → leitor/escritor.
+- Se envolve **palíndromo** ou comparação simétrica → pontas opostas.
+- Se pede "remova/compacte elementos mantendo a ordem" → leitor/escritor.
+- Se o array não está ordenado e a posição original não importa → **ordene primeiro** e reavalie.
 
-## Templates
+## 3. Templates de Código
+
+### Pontas opostas (par com soma alvo em array ordenado)
+
+```java
+// Java — cada comparação descarta uma ponta inteira de candidatos
+public int[] parComSoma(int[] nums, int alvo) {
+    int esq = 0, dir = nums.length - 1;
+    while (esq < dir) {
+        int soma = nums[esq] + nums[dir];
+        if (soma == alvo) return new int[]{esq, dir};
+        if (soma < alvo) esq++;  // soma pequena: só cresce se avançarmos o menor lado
+        else dir--;              // soma grande: só diminui se recuarmos o maior lado
+    }
+    return new int[]{};
+}
+```
 
 ```python
-# Pontas opostas — par com soma alvo em array ordenado, O(n)
-def par_soma(nums, alvo):
+def par_com_soma(nums, alvo):
     esq, dir = 0, len(nums) - 1
     while esq < dir:
-        s = nums[esq] + nums[dir]
-        if s == alvo:
+        soma = nums[esq] + nums[dir]
+        if soma == alvo:
             return [esq, dir]
-        if s < alvo:
-            esq += 1        # soma pequena demais: só melhora avançando esq
+        if soma < alvo:
+            esq += 1             # precisa de soma maior: avança a ponta pequena
         else:
-            dir -= 1        # soma grande demais: só melhora recuando dir
+            dir -= 1             # precisa de soma menor: recua a ponta grande
+    return []
+```
 
-# 3Sum — fixa um, two pointers no resto, O(n²)
-def three_sum(nums):
-    nums.sort()
-    res = []
-    for i in range(len(nums) - 2):
-        if i > 0 and nums[i] == nums[i - 1]:
-            continue                          # pula duplicata do fixo
-        esq, dir = i + 1, len(nums) - 1
-        while esq < dir:
-            s = nums[i] + nums[esq] + nums[dir]
-            if s < 0:   esq += 1
-            elif s > 0: dir -= 1
-            else:
-                res.append([nums[i], nums[esq], nums[dir]])
-                esq += 1
-                while esq < dir and nums[esq] == nums[esq - 1]:
-                    esq += 1                  # pula duplicatas internas
-    return res
+### Leitor/escritor (compactar in-place)
 
-# Leitor/escritor — remover duplicatas de array ordenado, in-place
+```java
+// Java — 'escreve' marca a fronteira do array "limpo"; 'le' varre tudo
+public int removeDuplicates(int[] nums) {
+    int escreve = 1;                              // posição 0 já é única por definição
+    for (int le = 1; le < nums.length; le++) {
+        if (nums[le] != nums[escreve - 1]) {      // só copia o que é novo em relação ao último aceito
+            nums[escreve++] = nums[le];
+        }
+    }
+    return escreve;                               // novo tamanho lógico do array
+}
+```
+
+```python
 def remove_duplicates(nums):
     escreve = 1
     for le in range(1, len(nums)):
-        if nums[le] != nums[escreve - 1]:
+        if nums[le] != nums[escreve - 1]:   # compara com o último ACEITO, não com o vizinho
             nums[escreve] = nums[le]
             escreve += 1
     return escreve
 ```
 
-## Complexidade típica
+## 4. Walkthrough Visual (Teste de Mesa)
 
-O(n) tempo (cada ponteiro percorre o array no máximo uma vez), O(1) espaço. Com ordenação prévia: O(n log n).
+`parComSoma(nums=[1, 3, 4, 6, 9], alvo=10)`
 
-## Erros comuns
+| Iteração | esq | dir | nums[esq]+nums[dir] | Decisão |
+|---|---|---|---|---|
+| 1 | 0 (1) | 4 (9) | 10 | **== alvo → retorna [0, 4]** ✔ |
 
-- Aplicar em array **não ordenado** sem ordenar (a regra de descarte deixa de valer)
-- Esquecer de pular duplicatas no 3Sum (resposta com triplas repetidas)
-- Off-by-one na condição (`esq < dir` vs `esq <= dir` — pense se os ponteiros podem apontar para o mesmo elemento)
-- Não conseguir **justificar por que é seguro descartar** — se você não sabe explicar por que mover o ponteiro não perde a resposta, o padrão pode não se aplicar
+`parComSoma(nums=[1, 3, 4, 6, 9], alvo=9)`
 
-## Problemas recomendados
+| Iteração | esq | dir | soma | Decisão |
+|---|---|---|---|---|
+| 1 | 0 (1) | 4 (9) | 10 | > 9 → `dir--` |
+| 2 | 0 (1) | 3 (6) | 7 | < 9 → `esq++` |
+| 3 | 1 (3) | 3 (6) | 9 | **== alvo → retorna [1, 3]** ✔ |
 
-| Problema | Dificuldade |
-|---|---|
-| 125. Valid Palindrome | 🟢 easy |
-| 167. Two Sum II | 🟢 easy |
-| 283. Move Zeroes | 🟢 easy |
-| 15. 3Sum | 🟡 medium |
-| 11. Container With Most Water | 🟡 medium |
-| 42. Trapping Rain Water | 🔴 hard |
+## 5. Complexidade (Tempo e Espaço)
 
-## Conexão com backend
+| Cenário | Tempo | Espaço |
+|---|---|---|
+| Array já ordenado | O(n) | O(1) |
+| Precisa ordenar antes | O(n log n) | O(1)–O(n) conforme o sort |
+| 3Sum (fixa 1 + two pointers) | O(n²) | O(1) |
 
-O padrão leitor/escritor é o mesmo de compactação de buffers e de merge de arquivos ordenados (merge externo — a base do merge sort em disco e da compactação de SSTables em bancos LSM, Vol. 2 Módulo D).
+- O(n) porque **cada ponteiro atravessa o array no máximo uma vez** — nunca voltam.
+
+## 6. Pegadinhas e Erros Comuns
+
+- Aplicar em array **não ordenado**: a regra de descarte perde a garantia e a resposta some silenciosamente.
+- `esq < dir` vs `esq <= dir`: pergunte se os ponteiros **podem** apontar para o mesmo elemento; no par com soma, não podem.
+- 3Sum sem pular duplicatas (`nums[i] == nums[i-1]`) → triplas repetidas na resposta.
+- **Java**: em arrays de `String`, comparar com `==` em vez de `.equals()` no critério do ponteiro.
+- **Python**: `dir` sombreia a built-in `dir()` — aceitável em entrevista, evite em produção.
+- Não saber **justificar o descarte** em voz alta = o padrão provavelmente não se aplica ao problema.
+
+## 7. Aplicações no Mundo Real (Backend)
+
+- **Merge de arquivos ordenados**: dois cursores avançando é a base do merge externo e da **compactação de SSTables** (LSM — Cassandra/RocksDB).
+- **PostgreSQL**: merge join usa exatamente dois cursores em relações ordenadas.
+- **Streams**: reconciliação de dois extratos ordenados por data (conciliação bancária) é two pointers puro.
+- Leitor/escritor é o padrão de **compactação de buffers** em parsers e protocolos binários.
+
+## 8. Problemas Recomendados (Trilha de Estudo)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 Easy |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | 🟢 Easy |
+| 167 | [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 🟡 Medium |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 🟡 Medium |
+| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 🔴 Hard |

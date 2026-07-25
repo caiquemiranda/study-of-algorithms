@@ -1,105 +1,153 @@
 # 14 — Programação Dinâmica 2D
 
-> Estados com duas dimensões: duas sequências, grade, ou item × capacidade. Problemas em [`../problemas/14_programacao_dinamica_2d/`](../problemas/14_programacao_dinamica_2d/).
+> Estados com duas dimensões: duas sequências, grades e mochilas. Soluções em [`../problemas/14_programacao_dinamica_2d/`](../problemas/14_programacao_dinamica_2d/).
 
-## Conceito
+## 1. Conceito Central e Analogia Didática
 
-Mesmo método do [13 — DP 1D](13_programacao_dinamica_1d.md) (estado → transição → base → resposta), mas o estado precisa de **dois índices**. As três famílias:
+- Mesmo método do [13 — DP 1D](13_programacao_dinamica_1d.md), mas o estado carrega **dois índices**: `dp[i][j]` = resposta para os prefixos `s1[:i]` e `s2[:j]` (ou célula da grade, ou item × capacidade).
+- Três famílias dominam: **duas sequências** (LCS, Edit Distance), **grade** (caminhos), **knapsack** (subconjunto que atinge capacidade).
+- Truque de compressão: se a transição só olha a **linha anterior**, uma linha basta — e no knapsack 0/1, a **direção do loop** de capacidade decide se o item pode repetir.
 
-**1. Duas sequências** — `dp[i][j]` = resposta para os prefixos `s1[:i]` e `s2[:j]`:
-- **LCS**: se os caracteres casam, `1 + dp[i-1][j-1]`; senão, `max(dp[i-1][j], dp[i][j-1])`
-- **Edit Distance**: min entre inserir, remover, substituir — cada um é uma das 3 células vizinhas
-- Este molde resolve: diff de arquivos, alinhamento, autocorreção
+**Analogia (LCS):** comparar duas trilhas de música numa mesa de mixagem: você avança dois cursores; quando os trechos casam, ganha 1 e avança os dois; quando não casam, testa avançar cada cursor separadamente e fica com o melhor. A tabela é a memória de todas as combinações de posições já comparadas.
 
-**2. Grade** — `dp[r][c]` = melhor forma de chegar à célula: `dp[r][c] = grid[r][c] + min/soma(dp[r-1][c], dp[r][c-1])`. Unique Paths, Minimum Path Sum.
+## 2. Como Reconhecer (Padrões de Enunciado)
 
-**3. Knapsack (mochila)** — `dp[i][cap]` = melhor usando os i primeiros itens com capacidade cap:
-- **0/1** (cada item uma vez): itera capacidade **decrescente** na versão 1D comprimida
-- **Unbounded** (reuso ilimitado): capacidade crescente
-- **Contagem de combinações** (Coin Change II): loop de **itens por fora** (senão conta permutações)
+- Se compara **duas strings/arrays** ("transformar A em B", "subsequência comum") → tabela (n+1)×(m+1).
+- Se pede caminhos/custos **numa grade** andando para direita/baixo → DP de grade.
+- Se pede "**subconjunto que soma X**" / "dividir em duas partes iguais" → knapsack (Partition, Target Sum).
+- Se pede "número de **combinações** que somam X" com reuso → unbounded, itens no loop de FORA.
+- Se a decisão divide o problema em esquerda+direita (Burst Balloons) → DP de intervalo, O(n³).
 
-## Como reconhecer no enunciado
+## 3. Templates de Código
 
-- Duas strings/arrays comparados ("transformar A em B", "subsequência comum")
-- Caminhos em grade com custo/contagem
-- "subconjunto que soma X" / "dividir em duas partes iguais" → knapsack (Partition, Target Sum)
-- Intervalos onde a decisão divide o problema em esquerda+direita (Burst Balloons) → DP de intervalo, `dp[i][j]`
+### LCS (duas sequências)
 
-## Templates
+```java
+// Java — dp[i][j] = LCS dos prefixos a[0..i) e b[0..j); índice da tabela = TAMANHO do prefixo
+public int longestCommonSubsequence(String a, String b) {
+    int n = a.length(), m = b.length();
+    int[][] dp = new int[n + 1][m + 1];          // linha/coluna 0 = prefixo vazio (base já em 0)
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            if (a.charAt(i - 1) == b.charAt(j - 1)) {   // i-1/j-1: tabela é 1-based, string 0-based
+                dp[i][j] = 1 + dp[i - 1][j - 1]; // casou: estende a diagonal (os dois avançam)
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]); // não casou: melhor de pular um lado
+            }
+        }
+    }
+    return dp[n][m];
+}
+```
 
 ```python
-# LCS — O(n·m)
 def lcs(a, b):
     n, m = len(a), len(b)
     dp = [[0] * (m + 1) for _ in range(n + 1)]
     for i in range(1, n + 1):
         for j in range(1, m + 1):
             if a[i-1] == b[j-1]:
-                dp[i][j] = 1 + dp[i-1][j-1]
+                dp[i][j] = 1 + dp[i-1][j-1]        # diagonal: casamento consome os dois chars
             else:
                 dp[i][j] = max(dp[i-1][j], dp[i][j-1])
     return dp[n][m]
+```
 
-# Edit Distance — O(n·m)
-def edit_distance(a, b):
-    n, m = len(a), len(b)
-    dp = [[0] * (m + 1) for _ in range(n + 1)]
-    for i in range(n + 1): dp[i][0] = i        # apagar tudo
-    for j in range(m + 1): dp[0][j] = j        # inserir tudo
-    for i in range(1, n + 1):
-        for j in range(1, m + 1):
-            if a[i-1] == b[j-1]:
-                dp[i][j] = dp[i-1][j-1]
-            else:
-                dp[i][j] = 1 + min(dp[i-1][j],     # remover
-                                   dp[i][j-1],     # inserir
-                                   dp[i-1][j-1])   # substituir
-    return dp[n][m]
+### Knapsack 0/1 comprimido (Partition / Target Sum)
 
-# Knapsack 0/1 comprimido — capacidade DECRESCENTE
-def knapsack_01(pesos, valores, cap):
-    dp = [0] * (cap + 1)
-    for p, v in zip(pesos, valores):
-        for c in range(cap, p - 1, -1):        # decrescente: item usado 1x
-            dp[c] = max(dp[c], dp[c - p] + v)
-    return dp[cap]
+```java
+// Java — 1 dimensão; capacidade DECRESCENTE garante que cada item entra no máximo 1 vez
+public boolean canPartition(int[] nums) {
+    int soma = Arrays.stream(nums).sum();
+    if (soma % 2 != 0) return false;
+    int alvo = soma / 2;
+    boolean[] dp = new boolean[alvo + 1];
+    dp[0] = true;                                  // soma 0 sempre alcançável (conjunto vazio)
+    for (int n : nums) {
+        for (int c = alvo; c >= n; c--) {          // DECRESCENTE: dp[c-n] ainda é da rodada anterior
+            dp[c] = dp[c] || dp[c - n];            // com o item (dp[c-n]) ou sem (dp[c])
+        }
+    }
+    return dp[alvo];
+}
+```
 
-# Coin Change II — combinações: moedas POR FORA, capacidade crescente
+```python
+def can_partition(nums):
+    soma = sum(nums)
+    if soma % 2:
+        return False
+    alvo = soma // 2
+    dp = [True] + [False] * alvo
+    for n in nums:
+        for c in range(alvo, n - 1, -1):   # decrescente = 0/1; crescente viraria reuso infinito
+            dp[c] = dp[c] or dp[c - n]
+    return dp[alvo]
+```
+
+### Coin Change II (contagem de COMBINAÇÕES)
+
+```python
 def change(amount, coins):
-    dp = [1] + [0] * amount
-    for moeda in coins:
+    dp = [1] + [0] * amount            # 1 forma de somar 0: não usar nada
+    for moeda in coins:                # moedas por FORA: fixa a ordem => conta combinações
         for v in range(moeda, amount + 1):
-            dp[v] += dp[v - moeda]
+            dp[v] += dp[v - moeda]     # loops invertidos contariam PERMUTAÇÕES (1+2 e 2+1 dobrados)
     return dp[amount]
 ```
 
-## Complexidade típica
+## 4. Walkthrough Visual (Teste de Mesa)
 
-O(n·m) tempo e espaço; espaço reduzível a O(min(n, m)) guardando só a linha anterior. DP de intervalo: O(n³).
+`lcs("ace", "abe")` — tabela `dp` (linhas = "ace", colunas = "abe"):
 
-## Erros comuns
+|  | "" | a | b | e |
+|---|---|---|---|---|
+| **""** | 0 | 0 | 0 | 0 |
+| **a** | 0 | **1**↖ | 1 | 1 |
+| **c** | 0 | 1 | 1 | 1 |
+| **e** | 0 | 1 | 1 | **2**↖ |
 
-- Off-by-one entre índice da string (`i-1`) e índice da tabela (`i`) — padronize `dp[i]` = "prefixo de tamanho i"
-- Knapsack 0/1 com capacidade crescente na versão 1D (reusa o item — vira unbounded silenciosamente)
-- Contagem: inverter a ordem dos loops e contar permutações em vez de combinações
-- Esquecer de inicializar linha 0 e coluna 0 (casos base do vazio)
-- Tentar otimizar espaço antes de ter a versão 2D correta
+- `a==a` → diagonal+1; `c` não casa com nada → herda o max dos vizinhos; `e==e` → 1+dp[2][2] = **2**.
+- LCS = "ae", tamanho **2** ✔ — a seta ↖ marca onde houve casamento.
 
-## Problemas recomendados
+## 5. Complexidade (Tempo e Espaço)
 
-| Problema | Dificuldade |
-|---|---|
-| 62. Unique Paths | 🟡 medium |
-| 64. Minimum Path Sum | 🟡 medium |
-| 1143. Longest Common Subsequence | 🟡 medium |
-| 518. Coin Change II | 🟡 medium |
-| 416. Partition Equal Subset Sum | 🟡 medium |
-| 494. Target Sum | 🟡 medium |
-| 97. Interleaving String | 🟡 medium |
-| 72. Edit Distance | 🟡 medium |
-| 312. Burst Balloons (DP de intervalo) | 🔴 hard |
-| 10. Regular Expression Matching | 🔴 hard |
+| Família | Tempo | Espaço |
+|---|---|---|
+| Duas sequências | O(n·m) | O(n·m) → O(min(n,m)) com 1 linha |
+| Grade | O(R·C) | O(C) comprimido |
+| Knapsack | O(n·capacidade) | O(capacidade) |
+| DP de intervalo | O(n³) | O(n²) |
 
-## Conexão com backend
+- Knapsack é "pseudo-polinomial": cresce com o **valor** da capacidade, não com o tamanho do input — capacidade de 10⁹ inviabiliza.
 
-Edit distance move o mundo real: `git diff`, correção ortográfica, deduplicação fuzzy de cadastros, comparação de DNA. LCS é o coração de ferramentas de merge. Knapsack é alocação de recursos com orçamento — inclusive bin packing de containers em schedulers tipo Kubernetes.
+## 6. Pegadinhas e Erros Comuns
+
+- **Off-by-one**: `dp[i]` = prefixo de TAMANHO i → o char correspondente é `s[i-1]`. Padronize e nunca mais erre.
+- Knapsack 0/1 com capacidade **crescente** na versão comprimida → item reutilizado silenciosamente (vira unbounded).
+- Contagem: **itens fora, capacidade dentro = combinações**; invertido = permutações — decore com o exemplo 1+2 vs 2+1.
+- Esquecer a linha/coluna 0 (caso base do vazio) → tabela inteira errada.
+- **Java**: `new int[n][m]` já vem zerado; `Boolean[][]` (wrapper) vem `null` — NPE ao ler sem inicializar.
+- **Python**: `[[0]*m]*n` cria n REFERÊNCIAS à mesma linha — mutação em uma muda todas; use list comprehension.
+- Otimizar espaço **antes** de ter a versão 2D correta e testada — depure na tabela cheia.
+
+## 7. Aplicações no Mundo Real (Backend)
+
+- **Edit distance move o mundo**: `git diff`, correção ortográfica, deduplicação fuzzy de cadastros de clientes, bioinformática.
+- **LCS**: motores de merge de 3 vias e ferramentas de comparação de versões de documentos.
+- **Knapsack**: alocação com orçamento — bin packing de pods no Kubernetes, seleção de features por custo/benefício, otimização de carga.
+- **PostgreSQL**: `levenshtein()` do módulo `fuzzystrmatch` é o Edit Distance rodando no banco.
+- Diff de configuração/estado (Terraform plan, reconciliação do K8s) é a família de duas sequências.
+
+## 8. Problemas Recomendados (Trilha de Estudo)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | 🟡 Medium |
+| 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | 🟡 Medium |
+| 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | 🟡 Medium |
+| 494 | [Target Sum](https://leetcode.com/problems/target-sum/) | 🟡 Medium |
+| 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii/) | 🟡 Medium |
+| 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | 🟡 Medium |
+| 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | 🔴 Hard |
+| 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | 🔴 Hard |
