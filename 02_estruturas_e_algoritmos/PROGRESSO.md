@@ -1,7 +1,7 @@
 # 📌 Progresso — Trilha de Estruturas de Dados e Algoritmos
 
 > Legenda: 🔴 nunca estudei · 🟡 superficial · 🟢 domino de verdade
-> Contagem de problemas: rode `python gerador_de_indice.py` e veja o [INDICE.md](INDICE.md).
+> A coluna "Problemas resolvidos" e a lista ✅ são atualizadas por `python gerador_de_indice.py` — os status 🔴🟡🟢 são seus, edite à vontade.
 
 ## Teoria
 
@@ -19,7 +19,7 @@
 | 02 | Two Pointers | 🔴 | 0 |
 | 03 | Sliding Window | 🔴 | 0 |
 | 04 | Stack / Monotonic Stack | 🔴 | 0 |
-| 05 | Busca Binária | 🔴 | 0 |
+| 05 | Busca Binária | 🔴 | 1 |
 | 06 | Linked List | 🔴 | 0 |
 | 07 | Árvores | 🔴 | 0 |
 | 08 | Tries | 🔴 | 0 |
@@ -33,6 +33,14 @@
 | 16 | Intervals | 🔴 | 0 |
 | 17 | Matemática e Geometria | 🔴 | 0 |
 | 18 | Bit Manipulation | 🔴 | 0 |
+
+## ✅ Problemas resolvidos (1)
+
+<!-- INICIO:PROBLEMAS-AUTO -->
+| # | Problema | Categoria | Dificuldade | Resolvido em |
+|---|---|---|---|---|
+| 0153 | [Find Minimum in Rotated Sorted Array](problemas/05_busca_binaria/medium/0153_find_minimum_in_rotated_sorted_array.md) | Busca Binária | 🟡 medium | 2026-07-24 |
+<!-- FIM:PROBLEMAS-AUTO -->
 
 ## Implementações do zero (implementacoes/)
 
