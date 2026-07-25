@@ -15,7 +15,7 @@
 
 | # | Padrão | Teoria | Problemas resolvidos |
 |---|---|---|---|
-| 01 | Arrays e Hashing | 🔴 | 0 |
+| 01 | Arrays e Hashing | 🔴 | 1 |
 | 02 | Two Pointers | 🔴 | 0 |
 | 03 | Sliding Window | 🔴 | 0 |
 | 04 | Stack / Monotonic Stack | 🔴 | 0 |
@@ -31,14 +31,16 @@
 | 14 | DP 2D | 🔴 | 0 |
 | 15 | Greedy | 🔴 | 0 |
 | 16 | Intervals | 🔴 | 0 |
-| 17 | Matemática e Geometria | 🔴 | 0 |
+| 17 | Matemática e Geometria | 🔴 | 1 |
 | 18 | Bit Manipulation | 🔴 | 0 |
 
-## ✅ Problemas resolvidos (1)
+## ✅ Problemas resolvidos (3)
 
 <!-- INICIO:PROBLEMAS-AUTO -->
 | # | Problema | Categoria | Dificuldade | Resolvido em |
 |---|---|---|---|---|
+| 0001 | [Two Sum](problemas/01_arrays_e_hashing/easy/0001_two_sum.md) | Arrays e Hashing | 🟢 easy | 2026-07-24 |
+| 0009 | [Palindrome Number](problemas/17_matematica_e_geometria/easy/0009_palindrome_number.md) | Matemática e Geometria | 🟢 easy | 2026-07-24 |
 | 0153 | [Find Minimum in Rotated Sorted Array](problemas/05_busca_binaria/medium/0153_find_minimum_in_rotated_sorted_array.md) | Busca Binária | 🟡 medium | 2026-07-24 |
 <!-- FIM:PROBLEMAS-AUTO -->
 
