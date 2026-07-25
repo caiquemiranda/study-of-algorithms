@@ -17,7 +17,8 @@ Este repositório é um roadmap de **anos**, organizado por nível de senioridad
 | [06_normas_e_legislacao/](06_normas_e_legislacao/) | ISO 25010, OWASP, LGPD, IEC 61508/62443, DORA... | Transversal (priorização no [guia](06_normas_e_legislacao/00_guia.md)) |
 | [07_projetos/](07_projetos/) | Os 7 projetos-âncora — onde tudo se junta | Um por marco |
 | [biblioteca.md](biblioteca.md) | Bibliografia consolidada (os 8 essenciais + gratuitos) | Consulta |
-| [roadmap/_arquivo/](roadmap/_arquivo/) | Os 4 volumes originais intactos + v1 histórica | Fonte de referência |
+| [roadmap/](roadmap/) | **Volumes consolidados** — 1 documento por nível (vol1-junior … vol6-projetos), gerados das pastas via `gerar_volumes.py` | Leitura contínua / offline |
+| [roadmap/_arquivo/](roadmap/_arquivo/) | Os documentos originais intactos (histórico) | Fonte de referência |
 
 ## 🪜 A regra de ouro dos níveis
 
