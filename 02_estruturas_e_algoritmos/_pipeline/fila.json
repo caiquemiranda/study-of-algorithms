@@ -25,7 +25,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -55,7 +55,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -69,7 +69,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -84,7 +84,7 @@
     "sorting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -97,7 +97,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -112,7 +112,7 @@
     "sorting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -140,7 +140,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -168,7 +168,7 @@
     "prefix-sum"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -198,7 +198,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -212,7 +212,7 @@
     "sorting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "revisar",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -225,7 +225,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -239,7 +239,7 @@
     "hash-table"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -253,7 +253,7 @@
     "string-matching"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -266,7 +266,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -279,7 +279,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -294,7 +294,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -307,7 +307,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -320,7 +320,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -333,7 +333,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -347,7 +347,7 @@
     "hash-table"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -362,7 +362,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -391,7 +391,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -405,7 +405,7 @@
     "hash-table"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -418,7 +418,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -431,7 +431,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -445,7 +445,7 @@
     "prefix-sum"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -474,7 +474,7 @@
     "sorting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -489,7 +489,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -517,7 +517,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -531,7 +531,7 @@
     "string-matching"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -546,7 +546,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -560,7 +560,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -576,7 +576,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -589,7 +589,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -602,7 +602,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -616,7 +616,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -631,7 +631,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -644,7 +644,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -659,7 +659,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -672,7 +672,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -686,7 +686,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -701,7 +701,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -715,7 +715,7 @@
     "hash-table"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -730,7 +730,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -745,7 +745,7 @@
     "counting-sort"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -758,7 +758,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -771,7 +771,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -800,7 +800,7 @@
     "counting-sort"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -815,7 +815,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -846,7 +846,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -873,7 +873,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -888,7 +888,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -902,7 +902,7 @@
     "sorting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -916,7 +916,7 @@
     "hash-table"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -929,7 +929,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -942,7 +942,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -955,7 +955,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -968,7 +968,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -983,7 +983,7 @@
     "sorting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -999,7 +999,7 @@
     "counting-sort"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1014,7 +1014,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1027,7 +1027,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1042,7 +1042,7 @@
     "counting"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1057,7 +1057,7 @@
     "string-matching"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1071,7 +1071,7 @@
     "prefix-sum"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1084,7 +1084,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1098,7 +1098,7 @@
     "prefix-sum"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1125,7 +1125,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1140,7 +1140,7 @@
     "string"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
@@ -1153,7 +1153,7 @@
     "array"
    ],
    "categoria": "01_arrays_e_hashing",
-   "status": "pendente",
+   "status": "documentado",
    "lote": null
   },
   {
