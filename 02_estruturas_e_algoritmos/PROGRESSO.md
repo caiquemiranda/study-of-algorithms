@@ -15,7 +15,7 @@
 
 | # | Padrão | Teoria | Problemas resolvidos |
 |---|---|---|---|
-| 01 | Arrays e Hashing | 🔴 | 70 |
+| 01 | Arrays e Hashing | 🔴 | 90 |
 | 02 | Two Pointers | 🔴 | 1 |
 | 03 | Sliding Window | 🔴 | 0 |
 | 04 | Stack / Monotonic Stack | 🔴 | 0 |
@@ -34,7 +34,7 @@
 | 17 | Matemática e Geometria | 🔴 | 1 |
 | 18 | Bit Manipulation | 🔴 | 0 |
 
-## ✅ Problemas resolvidos (74)
+## ✅ Problemas resolvidos (94)
 
 <!-- INICIO:PROBLEMAS-AUTO -->
 | # | Problema | Categoria | Dificuldade | Resolvido em |
@@ -113,6 +113,26 @@
 | 1431 | [Kids With the Greatest Number of Candies](problemas/01_arrays_e_hashing/easy/1431_kids_with_the_greatest_number_of_candies.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1436 | [Destination City](problemas/01_arrays_e_hashing/easy/1436_destination_city.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1437 | [Check If All 1's Are at Least Length K Places Away](problemas/01_arrays_e_hashing/easy/1437_check_if_all_1s_are_at_least_length_k_places_away.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 1446 | [Consecutive Characters](problemas/01_arrays_e_hashing/easy/1446_consecutive_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1450 | [Number of Students Doing Homework at a Given Time](problemas/01_arrays_e_hashing/easy/1450_number_of_students_doing_homework_at_a_given_time.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1460 | [Make Two Arrays Equal by Reversing Subarrays](problemas/01_arrays_e_hashing/easy/1460_make_two_arrays_equal_by_reversing_subarrays.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1470 | [Shuffle the Array](problemas/01_arrays_e_hashing/easy/1470_shuffle_the_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1480 | [Running Sum of 1d Array](problemas/01_arrays_e_hashing/easy/1480_running_sum_of_1d_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](problemas/01_arrays_e_hashing/easy/1491_average_salary_excluding_the_minimum_and_maximum_salary.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1496 | [Path Crossing](problemas/01_arrays_e_hashing/easy/1496_path_crossing.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1502 | [Can Make Arithmetic Progression From Sequence](problemas/01_arrays_e_hashing/easy/1502_can_make_arithmetic_progression_from_sequence.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1507 | [Reformat Date](problemas/01_arrays_e_hashing/easy/1507_reformat_date.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1528 | [Shuffle String](problemas/01_arrays_e_hashing/easy/1528_shuffle_string.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1534 | [Count Good Triplets](problemas/01_arrays_e_hashing/easy/1534_count_good_triplets.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1550 | [Three Consecutive Odds](problemas/01_arrays_e_hashing/easy/1550_three_consecutive_odds.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1556 | [Thousand Separator](problemas/01_arrays_e_hashing/easy/1556_thousand_separator.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1566 | [Detect Pattern of Length M Repeated K or More Times](problemas/01_arrays_e_hashing/easy/1566_detect_pattern_of_length_m_repeated_k_or_more_times.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1576 | [Replace All ?'s to Avoid Consecutive Repeating Characters](problemas/01_arrays_e_hashing/easy/1576_replace_all_s_to_avoid_consecutive_repeating_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1592 | [Rearrange Spaces Between Words](problemas/01_arrays_e_hashing/easy/1592_rearrange_spaces_between_words.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1619 | [Mean of Array After Removing Some Elements](problemas/01_arrays_e_hashing/easy/1619_mean_of_array_after_removing_some_elements.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1624 | [Largest Substring Between Two Equal Characters](problemas/01_arrays_e_hashing/easy/1624_largest_substring_between_two_equal_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1629 | [Slowest Key](problemas/01_arrays_e_hashing/easy/1629_slowest_key.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1636 | [Sort Array by Increasing Frequency](problemas/01_arrays_e_hashing/easy/1636_sort_array_by_increasing_frequency.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 <!-- FIM:PROBLEMAS-AUTO -->
 
 ## Implementações do zero (implementacoes/)

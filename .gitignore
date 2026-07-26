@@ -1,6 +1,6 @@
-# Dados baixados do LeetCode (enunciados são conteúdo protegido — não redistribuir no repositório)
-02_estruturas_e_algoritmos/_pipeline
-
 # Python
 __pycache__/
 *.pyc
+
+.claude
+_pipeline

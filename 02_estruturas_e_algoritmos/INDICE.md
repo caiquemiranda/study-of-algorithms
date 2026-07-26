@@ -1,10 +1,10 @@
 # Índice de Problemas
 
-> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-25. Não edite à mão.
+> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-26. Não edite à mão.
 
-**Total: 74** (🟢 easy: 72 · 🟡 medium: 2 · 🔴 hard: 0)
+**Total: 94** (🟢 easy: 92 · 🟡 medium: 2 · 🔴 hard: 0)
 
-## Arrays e Hashing (70)
+## Arrays e Hashing (90)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -78,6 +78,26 @@
 | 1431 | [Kids With the Greatest Number of Candies](problemas/01_arrays_e_hashing/easy/1431_kids_with_the_greatest_number_of_candies.md) | 🟢 easy |
 | 1436 | [Destination City](problemas/01_arrays_e_hashing/easy/1436_destination_city.md) | 🟢 easy |
 | 1437 | [Check If All 1's Are at Least Length K Places Away](problemas/01_arrays_e_hashing/easy/1437_check_if_all_1s_are_at_least_length_k_places_away.md) | 🟢 easy |
+| 1446 | [Consecutive Characters](problemas/01_arrays_e_hashing/easy/1446_consecutive_characters.md) | 🟢 easy |
+| 1450 | [Number of Students Doing Homework at a Given Time](problemas/01_arrays_e_hashing/easy/1450_number_of_students_doing_homework_at_a_given_time.md) | 🟢 easy |
+| 1460 | [Make Two Arrays Equal by Reversing Subarrays](problemas/01_arrays_e_hashing/easy/1460_make_two_arrays_equal_by_reversing_subarrays.md) | 🟢 easy |
+| 1470 | [Shuffle the Array](problemas/01_arrays_e_hashing/easy/1470_shuffle_the_array.md) | 🟢 easy |
+| 1480 | [Running Sum of 1d Array](problemas/01_arrays_e_hashing/easy/1480_running_sum_of_1d_array.md) | 🟢 easy |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](problemas/01_arrays_e_hashing/easy/1491_average_salary_excluding_the_minimum_and_maximum_salary.md) | 🟢 easy |
+| 1496 | [Path Crossing](problemas/01_arrays_e_hashing/easy/1496_path_crossing.md) | 🟢 easy |
+| 1502 | [Can Make Arithmetic Progression From Sequence](problemas/01_arrays_e_hashing/easy/1502_can_make_arithmetic_progression_from_sequence.md) | 🟢 easy |
+| 1507 | [Reformat Date](problemas/01_arrays_e_hashing/easy/1507_reformat_date.md) | 🟢 easy |
+| 1528 | [Shuffle String](problemas/01_arrays_e_hashing/easy/1528_shuffle_string.md) | 🟢 easy |
+| 1534 | [Count Good Triplets](problemas/01_arrays_e_hashing/easy/1534_count_good_triplets.md) | 🟢 easy |
+| 1550 | [Three Consecutive Odds](problemas/01_arrays_e_hashing/easy/1550_three_consecutive_odds.md) | 🟢 easy |
+| 1556 | [Thousand Separator](problemas/01_arrays_e_hashing/easy/1556_thousand_separator.md) | 🟢 easy |
+| 1566 | [Detect Pattern of Length M Repeated K or More Times](problemas/01_arrays_e_hashing/easy/1566_detect_pattern_of_length_m_repeated_k_or_more_times.md) | 🟢 easy |
+| 1576 | [Replace All ?'s to Avoid Consecutive Repeating Characters](problemas/01_arrays_e_hashing/easy/1576_replace_all_s_to_avoid_consecutive_repeating_characters.md) | 🟢 easy |
+| 1592 | [Rearrange Spaces Between Words](problemas/01_arrays_e_hashing/easy/1592_rearrange_spaces_between_words.md) | 🟢 easy |
+| 1619 | [Mean of Array After Removing Some Elements](problemas/01_arrays_e_hashing/easy/1619_mean_of_array_after_removing_some_elements.md) | 🟢 easy |
+| 1624 | [Largest Substring Between Two Equal Characters](problemas/01_arrays_e_hashing/easy/1624_largest_substring_between_two_equal_characters.md) | 🟢 easy |
+| 1629 | [Slowest Key](problemas/01_arrays_e_hashing/easy/1629_slowest_key.md) | 🟢 easy |
+| 1636 | [Sort Array by Increasing Frequency](problemas/01_arrays_e_hashing/easy/1636_sort_array_by_increasing_frequency.md) | 🟢 easy |
 
 ## Two Pointers (1)
 
