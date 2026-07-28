@@ -1,10 +1,10 @@
 # Índice de Problemas
 
-> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-27. Não edite à mão.
+> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-28. Não edite à mão.
 
-**Total: 214** (🟢 easy: 149 · 🟡 medium: 65 · 🔴 hard: 0)
+**Total: 234** (🟢 easy: 166 · 🟡 medium: 68 · 🔴 hard: 0)
 
-## Arrays e Hashing (92)
+## Arrays e Hashing (93)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -18,6 +18,7 @@
 | 0290 | [Word Pattern](problemas/01_arrays_e_hashing/easy/0290_word_pattern.md) | 🟢 easy |
 | 0303 | [Range Sum Query - Immutable](problemas/01_arrays_e_hashing/easy/0303_range_sum_query_immutable.md) | 🟢 easy |
 | 0383 | [Ransom Note](problemas/01_arrays_e_hashing/easy/0383_ransom_note.md) | 🟢 easy |
+| 0387 | [First Unique Character in a String](problemas/01_arrays_e_hashing/easy/0387_first_unique_character_in_a_string.md) | 🟢 easy |
 | 0414 | [Third Maximum Number](problemas/01_arrays_e_hashing/easy/0414_third_maximum_number.md) | 🟢 easy |
 | 0434 | [Number of Segments in a String](problemas/01_arrays_e_hashing/easy/0434_number_of_segments_in_a_string.md) | 🟢 easy |
 | 0448 | [Find All Numbers Disappeared in an Array](problemas/01_arrays_e_hashing/easy/0448_find_all_numbers_disappeared_in_an_array.md) | 🟢 easy |
@@ -229,6 +230,30 @@
 | 3318 | [Find X-Sum of All K-Long Subarrays I](problemas/03_sliding_window/easy/3318_find_x_sum_of_all_k_long_subarrays_i.md) | 🟢 easy |
 | 3364 | [Minimum Positive Sum Subarray](problemas/03_sliding_window/easy/3364_minimum_positive_sum_subarray.md) | 🟢 easy |
 | 3411 | [Maximum Subarray With Equal Products](problemas/03_sliding_window/easy/3411_maximum_subarray_with_equal_products.md) | 🟢 easy |
+
+## Stack (19)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 0020 | [Valid Parentheses](problemas/04_stack/easy/0020_valid_parentheses.md) | 🟢 easy |
+| 0071 | [Simplify Path](problemas/04_stack/medium/0071_simplify_path.md) | 🟡 medium |
+| 0150 | [Evaluate Reverse Polish Notation](problemas/04_stack/medium/0150_evaluate_reverse_polish_notation.md) | 🟡 medium |
+| 0155 | [Min Stack](problemas/04_stack/medium/0155_min_stack.md) | 🟡 medium |
+| 0225 | [Implement Stack using Queues](problemas/04_stack/easy/0225_implement_stack_using_queues.md) | 🟢 easy |
+| 0232 | [Implement Queue using Stacks](problemas/04_stack/easy/0232_implement_queue_using_stacks.md) | 🟢 easy |
+| 0496 | [Next Greater Element I](problemas/04_stack/easy/0496_next_greater_element_i.md) | 🟢 easy |
+| 0682 | [Baseball Game](problemas/04_stack/easy/0682_baseball_game.md) | 🟢 easy |
+| 0933 | [Number of Recent Calls](problemas/04_stack/easy/0933_number_of_recent_calls.md) | 🟢 easy |
+| 1021 | [Remove Outermost Parentheses](problemas/04_stack/easy/1021_remove_outermost_parentheses.md) | 🟢 easy |
+| 1047 | [Remove All Adjacent Duplicates In String](problemas/04_stack/easy/1047_remove_all_adjacent_duplicates_in_string.md) | 🟢 easy |
+| 1475 | [Final Prices With a Special Discount in a Shop](problemas/04_stack/easy/1475_final_prices_with_a_special_discount_in_a_shop.md) | 🟢 easy |
+| 1544 | [Make The String Great](problemas/04_stack/easy/1544_make_the_string_great.md) | 🟢 easy |
+| 1598 | [Crawler Log Folder](problemas/04_stack/easy/1598_crawler_log_folder.md) | 🟢 easy |
+| 1614 | [Maximum Nesting Depth of the Parentheses](problemas/04_stack/easy/1614_maximum_nesting_depth_of_the_parentheses.md) | 🟢 easy |
+| 1700 | [Number of Students Unable to Eat Lunch](problemas/04_stack/easy/1700_number_of_students_unable_to_eat_lunch.md) | 🟢 easy |
+| 2073 | [Time Needed to Buy Tickets](problemas/04_stack/easy/2073_time_needed_to_buy_tickets.md) | 🟢 easy |
+| 2696 | [Minimum String Length After Removing Substrings](problemas/04_stack/easy/2696_minimum_string_length_after_removing_substrings.md) | 🟢 easy |
+| 3174 | [Clear Digits](problemas/04_stack/easy/3174_clear_digits.md) | 🟢 easy |
 
 ## Busca Binária (1)
 
