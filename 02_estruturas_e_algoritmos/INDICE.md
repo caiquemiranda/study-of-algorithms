@@ -2,9 +2,9 @@
 
 > Gerado automaticamente por `gerador_de_indice.py` em 2026-07-27. Não edite à mão.
 
-**Total: 174** (🟢 easy: 149 · 🟡 medium: 25 · 🔴 hard: 0)
+**Total: 214** (🟢 easy: 149 · 🟡 medium: 65 · 🔴 hard: 0)
 
-## Arrays e Hashing (91)
+## Arrays e Hashing (92)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -53,6 +53,7 @@
 | 0953 | [Verifying an Alien Dictionary](problemas/01_arrays_e_hashing/easy/0953_verifying_an_alien_dictionary.md) | 🟢 easy |
 | 0961 | [N-Repeated Element in Size 2N Array](problemas/01_arrays_e_hashing/easy/0961_n_repeated_element_in_size_2n_array.md) | 🟢 easy |
 | 1002 | [Find Common Characters](problemas/01_arrays_e_hashing/easy/1002_find_common_characters.md) | 🟢 easy |
+| 1016 | [Binary String With Substrings Representing 1 To N](problemas/01_arrays_e_hashing/medium/1016_binary_string_with_substrings_representing_1_to_n.md) | 🟡 medium |
 | 1051 | [Height Checker](problemas/01_arrays_e_hashing/easy/1051_height_checker.md) | 🟢 easy |
 | 1078 | [Occurrences After Bigram](problemas/01_arrays_e_hashing/easy/1078_occurrences_after_bigram.md) | 🟢 easy |
 | 1108 | [Defanging an IP Address](problemas/01_arrays_e_hashing/easy/1108_defanging_an_ip_address.md) | 🟢 easy |
@@ -166,7 +167,7 @@
 | 2570 | [Merge Two 2D Arrays by Summing Values](problemas/02_two_pointers/easy/2570_merge_two_2d_arrays_by_summing_values.md) | 🟢 easy |
 | 2697 | [Lexicographically Smallest Palindrome](problemas/02_two_pointers/easy/2697_lexicographically_smallest_palindrome.md) | 🟢 easy |
 
-## Sliding Window (19)
+## Sliding Window (58)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -174,11 +175,50 @@
 | 0187 | [Repeated DNA Sequences](problemas/03_sliding_window/medium/0187_repeated_dna_sequences.md) | 🟡 medium |
 | 0209 | [Minimum Size Subarray Sum](problemas/03_sliding_window/medium/0209_minimum_size_subarray_sum.md) | 🟡 medium |
 | 0219 | [Contains Duplicate II](problemas/03_sliding_window/easy/0219_contains_duplicate_ii.md) | 🟢 easy |
+| 0395 | [Longest Substring with At Least K Repeating Characters](problemas/03_sliding_window/medium/0395_longest_substring_with_at_least_k_repeating_characters.md) | 🟡 medium |
+| 0413 | [Arithmetic Slices](problemas/03_sliding_window/medium/0413_arithmetic_slices.md) | 🟡 medium |
+| 0424 | [Longest Repeating Character Replacement](problemas/03_sliding_window/medium/0424_longest_repeating_character_replacement.md) | 🟡 medium |
+| 0438 | [Find All Anagrams in a String](problemas/03_sliding_window/medium/0438_find_all_anagrams_in_a_string.md) | 🟡 medium |
+| 0567 | [Permutation in String](problemas/03_sliding_window/medium/0567_permutation_in_string.md) | 🟡 medium |
 | 0643 | [Maximum Average Subarray I](problemas/03_sliding_window/easy/0643_maximum_average_subarray_i.md) | 🟢 easy |
+| 0658 | [Find K Closest Elements](problemas/03_sliding_window/medium/0658_find_k_closest_elements.md) | 🟡 medium |
+| 0713 | [Subarray Product Less Than K](problemas/03_sliding_window/medium/0713_subarray_product_less_than_k.md) | 🟡 medium |
+| 0718 | [Maximum Length of Repeated Subarray](problemas/03_sliding_window/medium/0718_maximum_length_of_repeated_subarray.md) | 🟡 medium |
+| 0837 | [New 21 Game](problemas/03_sliding_window/medium/0837_new_21_game.md) | 🟡 medium |
+| 0904 | [Fruit Into Baskets](problemas/03_sliding_window/medium/0904_fruit_into_baskets.md) | 🟡 medium |
+| 0930 | [Binary Subarrays With Sum](problemas/03_sliding_window/medium/0930_binary_subarrays_with_sum.md) | 🟡 medium |
+| 0978 | [Longest Turbulent Subarray](problemas/03_sliding_window/medium/0978_longest_turbulent_subarray.md) | 🟡 medium |
+| 1004 | [Max Consecutive Ones III](problemas/03_sliding_window/medium/1004_max_consecutive_ones_iii.md) | 🟡 medium |
+| 1031 | [Maximum Sum of Two Non-Overlapping Subarrays](problemas/03_sliding_window/medium/1031_maximum_sum_of_two_non_overlapping_subarrays.md) | 🟡 medium |
+| 1040 | [Moving Stones Until Consecutive II](problemas/03_sliding_window/medium/1040_moving_stones_until_consecutive_ii.md) | 🟡 medium |
+| 1052 | [Grumpy Bookstore Owner](problemas/03_sliding_window/medium/1052_grumpy_bookstore_owner.md) | 🟡 medium |
+| 1156 | [Swap For Longest Repeated Character Substring](problemas/03_sliding_window/medium/1156_swap_for_longest_repeated_character_substring.md) | 🟡 medium |
+| 1208 | [Get Equal Substrings Within Budget](problemas/03_sliding_window/medium/1208_get_equal_substrings_within_budget.md) | 🟡 medium |
+| 1234 | [Replace the Substring for Balanced String](problemas/03_sliding_window/medium/1234_replace_the_substring_for_balanced_string.md) | 🟡 medium |
+| 1248 | [Count Number of Nice Subarrays](problemas/03_sliding_window/medium/1248_count_number_of_nice_subarrays.md) | 🟡 medium |
+| 1297 | [Maximum Number of Occurrences of a Substring](problemas/03_sliding_window/medium/1297_maximum_number_of_occurrences_of_a_substring.md) | 🟡 medium |
+| 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](problemas/03_sliding_window/medium/1343_number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to_threshold.md) | 🟡 medium |
+| 1358 | [Number of Substrings Containing All Three Characters](problemas/03_sliding_window/medium/1358_number_of_substrings_containing_all_three_characters.md) | 🟡 medium |
+| 1423 | [Maximum Points You Can Obtain from Cards](problemas/03_sliding_window/medium/1423_maximum_points_you_can_obtain_from_cards.md) | 🟡 medium |
+| 1438 | [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](problemas/03_sliding_window/medium/1438_longest_continuous_subarray_with_absolute_diff_less_than_or_equal_to_limit.md) | 🟡 medium |
+| 1456 | [Maximum Number of Vowels in a Substring of Given Length](problemas/03_sliding_window/medium/1456_maximum_number_of_vowels_in_a_substring_of_given_length.md) | 🟡 medium |
+| 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](problemas/03_sliding_window/medium/1477_find_two_non_overlapping_sub_arrays_each_with_target_sum.md) | 🟡 medium |
+| 1493 | [Longest Subarray of 1's After Deleting One Element](problemas/03_sliding_window/medium/1493_longest_subarray_of_1s_after_deleting_one_element.md) | 🟡 medium |
 | 1652 | [Defuse the Bomb](problemas/03_sliding_window/easy/1652_defuse_the_bomb.md) | 🟢 easy |
+| 1658 | [Minimum Operations to Reduce X to Zero](problemas/03_sliding_window/medium/1658_minimum_operations_to_reduce_x_to_zero.md) | 🟡 medium |
+| 1695 | [Maximum Erasure Value](problemas/03_sliding_window/medium/1695_maximum_erasure_value.md) | 🟡 medium |
 | 1763 | [Longest Nice Substring](problemas/03_sliding_window/easy/1763_longest_nice_substring.md) | 🟢 easy |
+| 1838 | [Frequency of the Most Frequent Element](problemas/03_sliding_window/medium/1838_frequency_of_the_most_frequent_element.md) | 🟡 medium |
+| 1839 | [Longest Substring Of All Vowels in Order](problemas/03_sliding_window/medium/1839_longest_substring_of_all_vowels_in_order.md) | 🟡 medium |
+| 1871 | [Jump Game VII](problemas/03_sliding_window/medium/1871_jump_game_vii.md) | 🟡 medium |
 | 1876 | [Substrings of Size Three with Distinct Characters](problemas/03_sliding_window/easy/1876_substrings_of_size_three_with_distinct_characters.md) | 🟢 easy |
+| 1888 | [Minimum Number of Flips to Make the Binary String Alternating](problemas/03_sliding_window/medium/1888_minimum_number_of_flips_to_make_the_binary_string_alternating.md) | 🟡 medium |
 | 1984 | [Minimum Difference Between Highest and Lowest of K Scores](problemas/03_sliding_window/easy/1984_minimum_difference_between_highest_and_lowest_of_k_scores.md) | 🟢 easy |
+| 2024 | [Maximize the Confusion of an Exam](problemas/03_sliding_window/medium/2024_maximize_the_confusion_of_an_exam.md) | 🟡 medium |
+| 2090 | [K Radius Subarray Averages](problemas/03_sliding_window/medium/2090_k_radius_subarray_averages.md) | 🟡 medium |
+| 2110 | [Number of Smooth Descent Periods of a Stock](problemas/03_sliding_window/medium/2110_number_of_smooth_descent_periods_of_a_stock.md) | 🟡 medium |
+| 2134 | [Minimum Swaps to Group All 1's Together II](problemas/03_sliding_window/medium/2134_minimum_swaps_to_group_all_1s_together_ii.md) | 🟡 medium |
+| 2260 | [Minimum Consecutive Cards to Pick Up](problemas/03_sliding_window/medium/2260_minimum_consecutive_cards_to_pick_up.md) | 🟡 medium |
 | 2269 | [Find the K-Beauty of a Number](problemas/03_sliding_window/easy/2269_find_the_k_beauty_of_a_number.md) | 🟢 easy |
 | 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](problemas/03_sliding_window/easy/2379_minimum_recolors_to_get_k_consecutive_black_blocks.md) | 🟢 easy |
 | 2760 | [Longest Even Odd Subarray With Threshold](problemas/03_sliding_window/easy/2760_longest_even_odd_subarray_with_threshold.md) | 🟢 easy |
