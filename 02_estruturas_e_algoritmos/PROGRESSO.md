@@ -15,9 +15,9 @@
 
 | # | Padrão | Teoria | Problemas resolvidos |
 |---|---|---|---|
-| 01 | Arrays e Hashing | 🔴 | 90 |
-| 02 | Two Pointers | 🔴 | 1 |
-| 03 | Sliding Window | 🔴 | 0 |
+| 01 | Arrays e Hashing | 🔴 | 91 |
+| 02 | Two Pointers | 🔴 | 61 |
+| 03 | Sliding Window | 🔴 | 19 |
 | 04 | Stack / Monotonic Stack | 🔴 | 0 |
 | 05 | Busca Binária | 🔴 | 1 |
 | 06 | Linked List | 🔴 | 1 |
@@ -34,37 +34,58 @@
 | 17 | Matemática e Geometria | 🔴 | 1 |
 | 18 | Bit Manipulation | 🔴 | 0 |
 
-## ✅ Problemas resolvidos (94)
+## ✅ Problemas resolvidos (174)
 
 <!-- INICIO:PROBLEMAS-AUTO -->
 | # | Problema | Categoria | Dificuldade | Resolvido em |
 |---|---|---|---|---|
 | 0001 | [Two Sum](problemas/01_arrays_e_hashing/easy/0001_two_sum.md) | Arrays e Hashing | 🟢 easy | 2026-07-24 |
+| 0003 | [Longest Substring Without Repeating Characters](problemas/03_sliding_window/medium/0003_longest_substring_without_repeating_characters.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0009 | [Palindrome Number](problemas/17_matematica_e_geometria/easy/0009_palindrome_number.md) | Matemática e Geometria | 🟢 easy | 2026-07-24 |
+| 0026 | [Remove Duplicates from Sorted Array](problemas/02_two_pointers/easy/0026_remove_duplicates_from_sorted_array.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0027 | [Remove Element](problemas/02_two_pointers/easy/0027_remove_element.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0028 | [Find the Index of the First Occurrence in a String](problemas/02_two_pointers/easy/0028_find_the_index_of_the_first_occurrence_in_a_string.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0058 | [Length of Last Word](problemas/01_arrays_e_hashing/easy/0058_length_of_last_word.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0088 | [Merge Sorted Array](problemas/02_two_pointers/easy/0088_merge_sorted_array.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0125 | [Valid Palindrome](problemas/02_two_pointers/easy/0125_valid_palindrome.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0142 | [Linked List Cycle II](problemas/06_linked_list/medium/0142_linked_list_cycle_ii.md) | Linked List | 🟡 medium | 2026-07-25 |
 | 0153 | [Find Minimum in Rotated Sorted Array](problemas/05_busca_binaria/medium/0153_find_minimum_in_rotated_sorted_array.md) | Busca Binária | 🟡 medium | 2026-07-24 |
 | 0169 | [Majority Element](problemas/01_arrays_e_hashing/easy/0169_majority_element.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0187 | [Repeated DNA Sequences](problemas/03_sliding_window/medium/0187_repeated_dna_sequences.md) | Sliding Window | 🟡 medium | 2026-07-27 |
+| 0202 | [Happy Number](problemas/02_two_pointers/easy/0202_happy_number.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0205 | [Isomorphic Strings](problemas/01_arrays_e_hashing/easy/0205_isomorphic_strings.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0209 | [Minimum Size Subarray Sum](problemas/03_sliding_window/medium/0209_minimum_size_subarray_sum.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0217 | [Contains Duplicate](problemas/01_arrays_e_hashing/easy/0217_contains_duplicate.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0219 | [Contains Duplicate II](problemas/03_sliding_window/easy/0219_contains_duplicate_ii.md) | Sliding Window | 🟢 easy | 2026-07-27 |
 | 0228 | [Summary Ranges](problemas/01_arrays_e_hashing/easy/0228_summary_ranges.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0242 | [Valid Anagram](problemas/01_arrays_e_hashing/easy/0242_valid_anagram.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0283 | [Move Zeroes](problemas/02_two_pointers/easy/0283_move_zeroes.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0290 | [Word Pattern](problemas/01_arrays_e_hashing/easy/0290_word_pattern.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0303 | [Range Sum Query - Immutable](problemas/01_arrays_e_hashing/easy/0303_range_sum_query_immutable.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0344 | [Reverse String](problemas/02_two_pointers/easy/0344_reverse_string.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0345 | [Reverse Vowels of a String](problemas/02_two_pointers/easy/0345_reverse_vowels_of_a_string.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0383 | [Ransom Note](problemas/01_arrays_e_hashing/easy/0383_ransom_note.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0392 | [Is Subsequence](problemas/02_two_pointers/easy/0392_is_subsequence.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0414 | [Third Maximum Number](problemas/01_arrays_e_hashing/easy/0414_third_maximum_number.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0434 | [Number of Segments in a String](problemas/01_arrays_e_hashing/easy/0434_number_of_segments_in_a_string.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0448 | [Find All Numbers Disappeared in an Array](problemas/01_arrays_e_hashing/easy/0448_find_all_numbers_disappeared_in_an_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0455 | [Assign Cookies](problemas/02_two_pointers/easy/0455_assign_cookies.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0459 | [Repeated Substring Pattern](problemas/01_arrays_e_hashing/easy/0459_repeated_substring_pattern.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0482 | [License Key Formatting](problemas/01_arrays_e_hashing/easy/0482_license_key_formatting.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0485 | [Max Consecutive Ones](problemas/01_arrays_e_hashing/easy/0485_max_consecutive_ones.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0500 | [Keyboard Row](problemas/01_arrays_e_hashing/easy/0500_keyboard_row.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0520 | [Detect Capital](problemas/01_arrays_e_hashing/easy/0520_detect_capital.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0521 | [Longest Uncommon Subsequence I](problemas/01_arrays_e_hashing/easy/0521_longest_uncommon_subsequence_i.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0541 | [Reverse String II](problemas/02_two_pointers/easy/0541_reverse_string_ii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0551 | [Student Attendance Record I](problemas/01_arrays_e_hashing/easy/0551_student_attendance_record_i.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0557 | [Reverse Words in a String III](problemas/02_two_pointers/easy/0557_reverse_words_in_a_string_iii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0575 | [Distribute Candies](problemas/01_arrays_e_hashing/easy/0575_distribute_candies.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0594 | [Longest Harmonious Subsequence](problemas/01_arrays_e_hashing/easy/0594_longest_harmonious_subsequence.md) | Arrays e Hashing | 🟢 easy | 2026-07-27 |
 | 0599 | [Minimum Index Sum of Two Lists](problemas/01_arrays_e_hashing/easy/0599_minimum_index_sum_of_two_lists.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0643 | [Maximum Average Subarray I](problemas/03_sliding_window/easy/0643_maximum_average_subarray_i.md) | Sliding Window | 🟢 easy | 2026-07-27 |
 | 0674 | [Longest Continuous Increasing Subsequence](problemas/01_arrays_e_hashing/easy/0674_longest_continuous_increasing_subsequence.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0680 | [Valid Palindrome II](problemas/02_two_pointers/easy/0680_valid_palindrome_ii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0696 | [Count Binary Substrings](problemas/02_two_pointers/easy/0696_count_binary_substrings.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0697 | [Degree of an Array](problemas/01_arrays_e_hashing/easy/0697_degree_of_an_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0709 | [To Lower Case](problemas/01_arrays_e_hashing/easy/0709_to_lower_case.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0717 | [1-bit and 2-bit Characters](problemas/01_arrays_e_hashing/easy/0717_1_bit_and_2_bit_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
@@ -76,19 +97,29 @@
 | 0804 | [Unique Morse Code Words](problemas/01_arrays_e_hashing/easy/0804_unique_morse_code_words.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0806 | [Number of Lines To Write String](problemas/01_arrays_e_hashing/easy/0806_number_of_lines_to_write_string.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0819 | [Most Common Word](problemas/01_arrays_e_hashing/easy/0819_most_common_word.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0821 | [Shortest Distance to a Character](problemas/02_two_pointers/easy/0821_shortest_distance_to_a_character.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0824 | [Goat Latin](problemas/01_arrays_e_hashing/easy/0824_goat_latin.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0830 | [Positions of Large Groups](problemas/01_arrays_e_hashing/easy/0830_positions_of_large_groups.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0832 | [Flipping an Image](problemas/02_two_pointers/easy/0832_flipping_an_image.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0844 | [Backspace String Compare](problemas/02_two_pointers/easy/0844_backspace_string_compare.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0859 | [Buddy Strings](problemas/01_arrays_e_hashing/easy/0859_buddy_strings.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0884 | [Uncommon Words from Two Sentences](problemas/01_arrays_e_hashing/easy/0884_uncommon_words_from_two_sentences.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0896 | [Monotonic Array](problemas/01_arrays_e_hashing/easy/0896_monotonic_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0905 | [Sort Array By Parity](problemas/02_two_pointers/easy/0905_sort_array_by_parity.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0917 | [Reverse Only Letters](problemas/02_two_pointers/easy/0917_reverse_only_letters.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0922 | [Sort Array By Parity II](problemas/02_two_pointers/easy/0922_sort_array_by_parity_ii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0925 | [Long Pressed Name](problemas/02_two_pointers/easy/0925_long_pressed_name.md) | Two Pointers | 🟢 easy | 2026-07-27 |
 | 0929 | [Unique Email Addresses](problemas/01_arrays_e_hashing/easy/0929_unique_email_addresses.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0941 | [Valid Mountain Array](problemas/02_two_pointers/easy/0941_valid_mountain_array.md) | Two Pointers | 🟢 easy | 2026-07-25 |
+| 0942 | [DI String Match](problemas/02_two_pointers/easy/0942_di_string_match.md) | Two Pointers | 🟢 easy | 2026-07-27 |
 | 0944 | [Delete Columns to Make Sorted](problemas/01_arrays_e_hashing/easy/0944_delete_columns_to_make_sorted.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0953 | [Verifying an Alien Dictionary](problemas/01_arrays_e_hashing/easy/0953_verifying_an_alien_dictionary.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0961 | [N-Repeated Element in Size 2N Array](problemas/01_arrays_e_hashing/easy/0961_n_repeated_element_in_size_2n_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0977 | [Squares of a Sorted Array](problemas/02_two_pointers/easy/0977_squares_of_a_sorted_array.md) | Two Pointers | 🟢 easy | 2026-07-27 |
 | 1002 | [Find Common Characters](problemas/01_arrays_e_hashing/easy/1002_find_common_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1051 | [Height Checker](problemas/01_arrays_e_hashing/easy/1051_height_checker.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1078 | [Occurrences After Bigram](problemas/01_arrays_e_hashing/easy/1078_occurrences_after_bigram.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 1089 | [Duplicate Zeros](problemas/02_two_pointers/easy/1089_duplicate_zeros.md) | Two Pointers | 🟢 easy | 2026-07-27 |
 | 1108 | [Defanging an IP Address](problemas/01_arrays_e_hashing/easy/1108_defanging_an_ip_address.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1122 | [Relative Sort Array](problemas/01_arrays_e_hashing/easy/1122_relative_sort_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1128 | [Number of Equivalent Domino Pairs](problemas/01_arrays_e_hashing/easy/1128_number_of_equivalent_domino_pairs.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
@@ -102,6 +133,7 @@
 | 1309 | [Decrypt String from Alphabet to Integer Mapping](problemas/01_arrays_e_hashing/easy/1309_decrypt_string_from_alphabet_to_integer_mapping.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1313 | [Decompress Run-Length Encoded List](problemas/01_arrays_e_hashing/easy/1313_decompress_run_length_encoded_list.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1331 | [Rank Transform of an Array](problemas/01_arrays_e_hashing/easy/1331_rank_transform_of_an_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 1332 | [Remove Palindromic Subsequences](problemas/02_two_pointers/easy/1332_remove_palindromic_subsequences.md) | Two Pointers | 🟢 easy | 2026-07-27 |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number](problemas/01_arrays_e_hashing/easy/1365_how_many_numbers_are_smaller_than_the_current_number.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1370 | [Increasing Decreasing String](problemas/01_arrays_e_hashing/easy/1370_increasing_decreasing_string.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1374 | [Generate a String With Characters That Have Odd Counts](problemas/01_arrays_e_hashing/easy/1374_generate_a_string_with_characters_that_have_odd_counts.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
@@ -115,6 +147,7 @@
 | 1437 | [Check If All 1's Are at Least Length K Places Away](problemas/01_arrays_e_hashing/easy/1437_check_if_all_1s_are_at_least_length_k_places_away.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 1446 | [Consecutive Characters](problemas/01_arrays_e_hashing/easy/1446_consecutive_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1450 | [Number of Students Doing Homework at a Given Time](problemas/01_arrays_e_hashing/easy/1450_number_of_students_doing_homework_at_a_given_time.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1455 | [Check if a Word Occurs as a Prefix of Any Word in a Sentence](problemas/02_two_pointers/easy/1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence.md) | Two Pointers | 🟢 easy | 2026-07-27 |
 | 1460 | [Make Two Arrays Equal by Reversing Subarrays](problemas/01_arrays_e_hashing/easy/1460_make_two_arrays_equal_by_reversing_subarrays.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1470 | [Shuffle the Array](problemas/01_arrays_e_hashing/easy/1470_shuffle_the_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1480 | [Running Sum of 1d Array](problemas/01_arrays_e_hashing/easy/1480_running_sum_of_1d_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
@@ -128,11 +161,58 @@
 | 1556 | [Thousand Separator](problemas/01_arrays_e_hashing/easy/1556_thousand_separator.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1566 | [Detect Pattern of Length M Repeated K or More Times](problemas/01_arrays_e_hashing/easy/1566_detect_pattern_of_length_m_repeated_k_or_more_times.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1576 | [Replace All ?'s to Avoid Consecutive Repeating Characters](problemas/01_arrays_e_hashing/easy/1576_replace_all_s_to_avoid_consecutive_repeating_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1577 | [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](problemas/02_two_pointers/medium/1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbers.md) | Two Pointers | 🟡 medium | 2026-07-27 |
 | 1592 | [Rearrange Spaces Between Words](problemas/01_arrays_e_hashing/easy/1592_rearrange_spaces_between_words.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1616 | [Split Two Strings to Make Palindrome](problemas/02_two_pointers/medium/1616_split_two_strings_to_make_palindrome.md) | Two Pointers | 🟡 medium | 2026-07-27 |
 | 1619 | [Mean of Array After Removing Some Elements](problemas/01_arrays_e_hashing/easy/1619_mean_of_array_after_removing_some_elements.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1624 | [Largest Substring Between Two Equal Characters](problemas/01_arrays_e_hashing/easy/1624_largest_substring_between_two_equal_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1629 | [Slowest Key](problemas/01_arrays_e_hashing/easy/1629_slowest_key.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
 | 1636 | [Sort Array by Increasing Frequency](problemas/01_arrays_e_hashing/easy/1636_sort_array_by_increasing_frequency.md) | Arrays e Hashing | 🟢 easy | 2026-07-26 |
+| 1652 | [Defuse the Bomb](problemas/03_sliding_window/easy/1652_defuse_the_bomb.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 1679 | [Max Number of K-Sum Pairs](problemas/02_two_pointers/medium/1679_max_number_of_k_sum_pairs.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1750 | [Minimum Length of String After Deleting Similar Ends](problemas/02_two_pointers/medium/1750_minimum_length_of_string_after_deleting_similar_ends.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1754 | [Largest Merge of Two Strings](problemas/02_two_pointers/medium/1754_largest_merge_of_two_strings.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1763 | [Longest Nice Substring](problemas/03_sliding_window/easy/1763_longest_nice_substring.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 1764 | [Form Array by Concatenating Subarrays of Another Array](problemas/02_two_pointers/medium/1764_form_array_by_concatenating_subarrays_of_another_array.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1768 | [Merge Strings Alternately](problemas/02_two_pointers/easy/1768_merge_strings_alternately.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 1813 | [Sentence Similarity III](problemas/02_two_pointers/medium/1813_sentence_similarity_iii.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1850 | [Minimum Adjacent Swaps to Reach the Kth Smallest Number](problemas/02_two_pointers/medium/1850_minimum_adjacent_swaps_to_reach_the_kth_smallest_number.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1861 | [Rotating the Box](problemas/02_two_pointers/medium/1861_rotating_the_box.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1876 | [Substrings of Size Three with Distinct Characters](problemas/03_sliding_window/easy/1876_substrings_of_size_three_with_distinct_characters.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 1877 | [Minimize Maximum Pair Sum in Array](problemas/02_two_pointers/medium/1877_minimize_maximum_pair_sum_in_array.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1961 | [Check if String Is a Prefix of Array](problemas/02_two_pointers/easy/1961_check_if_string_is_a_prefix_of_array.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 1963 | [Minimum Number of Swaps to Make the String Balanced](problemas/02_two_pointers/medium/1963_minimum_number_of_swaps_to_make_the_string_balanced.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 1984 | [Minimum Difference Between Highest and Lowest of K Scores](problemas/03_sliding_window/easy/1984_minimum_difference_between_highest_and_lowest_of_k_scores.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 2000 | [Reverse Prefix of Word](problemas/02_two_pointers/easy/2000_reverse_prefix_of_word.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2105 | [Watering Plants II](problemas/02_two_pointers/medium/2105_watering_plants_ii.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2108 | [Find First Palindromic String in the Array](problemas/02_two_pointers/easy/2108_find_first_palindromic_string_in_the_array.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2109 | [Adding Spaces to a String](problemas/02_two_pointers/medium/2109_adding_spaces_to_a_string.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2149 | [Rearrange Array Elements by Sign](problemas/02_two_pointers/medium/2149_rearrange_array_elements_by_sign.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2161 | [Partition Array According to Given Pivot](problemas/02_two_pointers/medium/2161_partition_array_according_to_given_pivot.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2200 | [Find All K-Distant Indices in an Array](problemas/02_two_pointers/easy/2200_find_all_k_distant_indices_in_an_array.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2269 | [Find the K-Beauty of a Number](problemas/03_sliding_window/easy/2269_find_the_k_beauty_of_a_number.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 2337 | [Move Pieces to Obtain a String](problemas/02_two_pointers/medium/2337_move_pieces_to_obtain_a_string.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2367 | [Number of Arithmetic Triplets](problemas/02_two_pointers/easy/2367_number_of_arithmetic_triplets.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](problemas/03_sliding_window/easy/2379_minimum_recolors_to_get_k_consecutive_black_blocks.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 2396 | [Strictly Palindromic Number](problemas/02_two_pointers/medium/2396_strictly_palindromic_number.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2410 | [Maximum Matching of Players With Trainers](problemas/02_two_pointers/medium/2410_maximum_matching_of_players_with_trainers.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2441 | [Largest Positive Integer That Exists With Its Negative](problemas/02_two_pointers/easy/2441_largest_positive_integer_that_exists_with_its_negative.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2460 | [Apply Operations to an Array](problemas/02_two_pointers/easy/2460_apply_operations_to_an_array.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2465 | [Number of Distinct Averages](problemas/02_two_pointers/easy/2465_number_of_distinct_averages.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2486 | [Append Characters to String to Make Subsequence](problemas/02_two_pointers/medium/2486_append_characters_to_string_to_make_subsequence.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2491 | [Divide Players Into Teams of Equal Skill](problemas/02_two_pointers/medium/2491_divide_players_into_teams_of_equal_skill.md) | Two Pointers | 🟡 medium | 2026-07-27 |
+| 2511 | [Maximum Enemy Forts That Can Be Captured](problemas/02_two_pointers/easy/2511_maximum_enemy_forts_that_can_be_captured.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2562 | [Find the Array Concatenation Value](problemas/02_two_pointers/easy/2562_find_the_array_concatenation_value.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2570 | [Merge Two 2D Arrays by Summing Values](problemas/02_two_pointers/easy/2570_merge_two_2d_arrays_by_summing_values.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2697 | [Lexicographically Smallest Palindrome](problemas/02_two_pointers/easy/2697_lexicographically_smallest_palindrome.md) | Two Pointers | 🟢 easy | 2026-07-27 |
+| 2760 | [Longest Even Odd Subarray With Threshold](problemas/03_sliding_window/easy/2760_longest_even_odd_subarray_with_threshold.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3090 | [Maximum Length Substring With Two Occurrences](problemas/03_sliding_window/easy/3090_maximum_length_substring_with_two_occurrences.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3095 | [Shortest Subarray With OR at Least K I](problemas/03_sliding_window/easy/3095_shortest_subarray_with_or_at_least_k_i.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3206 | [Alternating Groups I](problemas/03_sliding_window/easy/3206_alternating_groups_i.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3258 | [Count Substrings That Satisfy K-Constraint I](problemas/03_sliding_window/easy/3258_count_substrings_that_satisfy_k_constraint_i.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3318 | [Find X-Sum of All K-Long Subarrays I](problemas/03_sliding_window/easy/3318_find_x_sum_of_all_k_long_subarrays_i.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3364 | [Minimum Positive Sum Subarray](problemas/03_sliding_window/easy/3364_minimum_positive_sum_subarray.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 3411 | [Maximum Subarray With Equal Products](problemas/03_sliding_window/easy/3411_maximum_subarray_with_equal_products.md) | Sliding Window | 🟢 easy | 2026-07-27 |
 <!-- FIM:PROBLEMAS-AUTO -->
 
 ## Implementações do zero (implementacoes/)

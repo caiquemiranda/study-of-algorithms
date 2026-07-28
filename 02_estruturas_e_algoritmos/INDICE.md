@@ -1,10 +1,10 @@
 # Índice de Problemas
 
-> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-26. Não edite à mão.
+> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-27. Não edite à mão.
 
-**Total: 94** (🟢 easy: 92 · 🟡 medium: 2 · 🔴 hard: 0)
+**Total: 174** (🟢 easy: 149 · 🟡 medium: 25 · 🔴 hard: 0)
 
-## Arrays e Hashing (90)
+## Arrays e Hashing (91)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -29,6 +29,7 @@
 | 0521 | [Longest Uncommon Subsequence I](problemas/01_arrays_e_hashing/easy/0521_longest_uncommon_subsequence_i.md) | 🟢 easy |
 | 0551 | [Student Attendance Record I](problemas/01_arrays_e_hashing/easy/0551_student_attendance_record_i.md) | 🟢 easy |
 | 0575 | [Distribute Candies](problemas/01_arrays_e_hashing/easy/0575_distribute_candies.md) | 🟢 easy |
+| 0594 | [Longest Harmonious Subsequence](problemas/01_arrays_e_hashing/easy/0594_longest_harmonious_subsequence.md) | 🟢 easy |
 | 0599 | [Minimum Index Sum of Two Lists](problemas/01_arrays_e_hashing/easy/0599_minimum_index_sum_of_two_lists.md) | 🟢 easy |
 | 0674 | [Longest Continuous Increasing Subsequence](problemas/01_arrays_e_hashing/easy/0674_longest_continuous_increasing_subsequence.md) | 🟢 easy |
 | 0697 | [Degree of an Array](problemas/01_arrays_e_hashing/easy/0697_degree_of_an_array.md) | 🟢 easy |
@@ -99,11 +100,95 @@
 | 1629 | [Slowest Key](problemas/01_arrays_e_hashing/easy/1629_slowest_key.md) | 🟢 easy |
 | 1636 | [Sort Array by Increasing Frequency](problemas/01_arrays_e_hashing/easy/1636_sort_array_by_increasing_frequency.md) | 🟢 easy |
 
-## Two Pointers (1)
+## Two Pointers (61)
 
 | # | Problema | Dificuldade |
 |---|---|---|
+| 0026 | [Remove Duplicates from Sorted Array](problemas/02_two_pointers/easy/0026_remove_duplicates_from_sorted_array.md) | 🟢 easy |
+| 0027 | [Remove Element](problemas/02_two_pointers/easy/0027_remove_element.md) | 🟢 easy |
+| 0028 | [Find the Index of the First Occurrence in a String](problemas/02_two_pointers/easy/0028_find_the_index_of_the_first_occurrence_in_a_string.md) | 🟢 easy |
+| 0088 | [Merge Sorted Array](problemas/02_two_pointers/easy/0088_merge_sorted_array.md) | 🟢 easy |
+| 0125 | [Valid Palindrome](problemas/02_two_pointers/easy/0125_valid_palindrome.md) | 🟢 easy |
+| 0202 | [Happy Number](problemas/02_two_pointers/easy/0202_happy_number.md) | 🟢 easy |
+| 0283 | [Move Zeroes](problemas/02_two_pointers/easy/0283_move_zeroes.md) | 🟢 easy |
+| 0344 | [Reverse String](problemas/02_two_pointers/easy/0344_reverse_string.md) | 🟢 easy |
+| 0345 | [Reverse Vowels of a String](problemas/02_two_pointers/easy/0345_reverse_vowels_of_a_string.md) | 🟢 easy |
+| 0392 | [Is Subsequence](problemas/02_two_pointers/easy/0392_is_subsequence.md) | 🟢 easy |
+| 0455 | [Assign Cookies](problemas/02_two_pointers/easy/0455_assign_cookies.md) | 🟢 easy |
+| 0541 | [Reverse String II](problemas/02_two_pointers/easy/0541_reverse_string_ii.md) | 🟢 easy |
+| 0557 | [Reverse Words in a String III](problemas/02_two_pointers/easy/0557_reverse_words_in_a_string_iii.md) | 🟢 easy |
+| 0680 | [Valid Palindrome II](problemas/02_two_pointers/easy/0680_valid_palindrome_ii.md) | 🟢 easy |
+| 0696 | [Count Binary Substrings](problemas/02_two_pointers/easy/0696_count_binary_substrings.md) | 🟢 easy |
+| 0821 | [Shortest Distance to a Character](problemas/02_two_pointers/easy/0821_shortest_distance_to_a_character.md) | 🟢 easy |
+| 0832 | [Flipping an Image](problemas/02_two_pointers/easy/0832_flipping_an_image.md) | 🟢 easy |
+| 0844 | [Backspace String Compare](problemas/02_two_pointers/easy/0844_backspace_string_compare.md) | 🟢 easy |
+| 0905 | [Sort Array By Parity](problemas/02_two_pointers/easy/0905_sort_array_by_parity.md) | 🟢 easy |
+| 0917 | [Reverse Only Letters](problemas/02_two_pointers/easy/0917_reverse_only_letters.md) | 🟢 easy |
+| 0922 | [Sort Array By Parity II](problemas/02_two_pointers/easy/0922_sort_array_by_parity_ii.md) | 🟢 easy |
+| 0925 | [Long Pressed Name](problemas/02_two_pointers/easy/0925_long_pressed_name.md) | 🟢 easy |
 | 0941 | [Valid Mountain Array](problemas/02_two_pointers/easy/0941_valid_mountain_array.md) | 🟢 easy |
+| 0942 | [DI String Match](problemas/02_two_pointers/easy/0942_di_string_match.md) | 🟢 easy |
+| 0977 | [Squares of a Sorted Array](problemas/02_two_pointers/easy/0977_squares_of_a_sorted_array.md) | 🟢 easy |
+| 1089 | [Duplicate Zeros](problemas/02_two_pointers/easy/1089_duplicate_zeros.md) | 🟢 easy |
+| 1332 | [Remove Palindromic Subsequences](problemas/02_two_pointers/easy/1332_remove_palindromic_subsequences.md) | 🟢 easy |
+| 1455 | [Check if a Word Occurs as a Prefix of Any Word in a Sentence](problemas/02_two_pointers/easy/1455_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence.md) | 🟢 easy |
+| 1577 | [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](problemas/02_two_pointers/medium/1577_number_of_ways_where_square_of_number_is_equal_to_product_of_two_numbers.md) | 🟡 medium |
+| 1616 | [Split Two Strings to Make Palindrome](problemas/02_two_pointers/medium/1616_split_two_strings_to_make_palindrome.md) | 🟡 medium |
+| 1679 | [Max Number of K-Sum Pairs](problemas/02_two_pointers/medium/1679_max_number_of_k_sum_pairs.md) | 🟡 medium |
+| 1750 | [Minimum Length of String After Deleting Similar Ends](problemas/02_two_pointers/medium/1750_minimum_length_of_string_after_deleting_similar_ends.md) | 🟡 medium |
+| 1754 | [Largest Merge of Two Strings](problemas/02_two_pointers/medium/1754_largest_merge_of_two_strings.md) | 🟡 medium |
+| 1764 | [Form Array by Concatenating Subarrays of Another Array](problemas/02_two_pointers/medium/1764_form_array_by_concatenating_subarrays_of_another_array.md) | 🟡 medium |
+| 1768 | [Merge Strings Alternately](problemas/02_two_pointers/easy/1768_merge_strings_alternately.md) | 🟢 easy |
+| 1813 | [Sentence Similarity III](problemas/02_two_pointers/medium/1813_sentence_similarity_iii.md) | 🟡 medium |
+| 1850 | [Minimum Adjacent Swaps to Reach the Kth Smallest Number](problemas/02_two_pointers/medium/1850_minimum_adjacent_swaps_to_reach_the_kth_smallest_number.md) | 🟡 medium |
+| 1861 | [Rotating the Box](problemas/02_two_pointers/medium/1861_rotating_the_box.md) | 🟡 medium |
+| 1877 | [Minimize Maximum Pair Sum in Array](problemas/02_two_pointers/medium/1877_minimize_maximum_pair_sum_in_array.md) | 🟡 medium |
+| 1961 | [Check if String Is a Prefix of Array](problemas/02_two_pointers/easy/1961_check_if_string_is_a_prefix_of_array.md) | 🟢 easy |
+| 1963 | [Minimum Number of Swaps to Make the String Balanced](problemas/02_two_pointers/medium/1963_minimum_number_of_swaps_to_make_the_string_balanced.md) | 🟡 medium |
+| 2000 | [Reverse Prefix of Word](problemas/02_two_pointers/easy/2000_reverse_prefix_of_word.md) | 🟢 easy |
+| 2105 | [Watering Plants II](problemas/02_two_pointers/medium/2105_watering_plants_ii.md) | 🟡 medium |
+| 2108 | [Find First Palindromic String in the Array](problemas/02_two_pointers/easy/2108_find_first_palindromic_string_in_the_array.md) | 🟢 easy |
+| 2109 | [Adding Spaces to a String](problemas/02_two_pointers/medium/2109_adding_spaces_to_a_string.md) | 🟡 medium |
+| 2149 | [Rearrange Array Elements by Sign](problemas/02_two_pointers/medium/2149_rearrange_array_elements_by_sign.md) | 🟡 medium |
+| 2161 | [Partition Array According to Given Pivot](problemas/02_two_pointers/medium/2161_partition_array_according_to_given_pivot.md) | 🟡 medium |
+| 2200 | [Find All K-Distant Indices in an Array](problemas/02_two_pointers/easy/2200_find_all_k_distant_indices_in_an_array.md) | 🟢 easy |
+| 2337 | [Move Pieces to Obtain a String](problemas/02_two_pointers/medium/2337_move_pieces_to_obtain_a_string.md) | 🟡 medium |
+| 2367 | [Number of Arithmetic Triplets](problemas/02_two_pointers/easy/2367_number_of_arithmetic_triplets.md) | 🟢 easy |
+| 2396 | [Strictly Palindromic Number](problemas/02_two_pointers/medium/2396_strictly_palindromic_number.md) | 🟡 medium |
+| 2410 | [Maximum Matching of Players With Trainers](problemas/02_two_pointers/medium/2410_maximum_matching_of_players_with_trainers.md) | 🟡 medium |
+| 2441 | [Largest Positive Integer That Exists With Its Negative](problemas/02_two_pointers/easy/2441_largest_positive_integer_that_exists_with_its_negative.md) | 🟢 easy |
+| 2460 | [Apply Operations to an Array](problemas/02_two_pointers/easy/2460_apply_operations_to_an_array.md) | 🟢 easy |
+| 2465 | [Number of Distinct Averages](problemas/02_two_pointers/easy/2465_number_of_distinct_averages.md) | 🟢 easy |
+| 2486 | [Append Characters to String to Make Subsequence](problemas/02_two_pointers/medium/2486_append_characters_to_string_to_make_subsequence.md) | 🟡 medium |
+| 2491 | [Divide Players Into Teams of Equal Skill](problemas/02_two_pointers/medium/2491_divide_players_into_teams_of_equal_skill.md) | 🟡 medium |
+| 2511 | [Maximum Enemy Forts That Can Be Captured](problemas/02_two_pointers/easy/2511_maximum_enemy_forts_that_can_be_captured.md) | 🟢 easy |
+| 2562 | [Find the Array Concatenation Value](problemas/02_two_pointers/easy/2562_find_the_array_concatenation_value.md) | 🟢 easy |
+| 2570 | [Merge Two 2D Arrays by Summing Values](problemas/02_two_pointers/easy/2570_merge_two_2d_arrays_by_summing_values.md) | 🟢 easy |
+| 2697 | [Lexicographically Smallest Palindrome](problemas/02_two_pointers/easy/2697_lexicographically_smallest_palindrome.md) | 🟢 easy |
+
+## Sliding Window (19)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 0003 | [Longest Substring Without Repeating Characters](problemas/03_sliding_window/medium/0003_longest_substring_without_repeating_characters.md) | 🟡 medium |
+| 0187 | [Repeated DNA Sequences](problemas/03_sliding_window/medium/0187_repeated_dna_sequences.md) | 🟡 medium |
+| 0209 | [Minimum Size Subarray Sum](problemas/03_sliding_window/medium/0209_minimum_size_subarray_sum.md) | 🟡 medium |
+| 0219 | [Contains Duplicate II](problemas/03_sliding_window/easy/0219_contains_duplicate_ii.md) | 🟢 easy |
+| 0643 | [Maximum Average Subarray I](problemas/03_sliding_window/easy/0643_maximum_average_subarray_i.md) | 🟢 easy |
+| 1652 | [Defuse the Bomb](problemas/03_sliding_window/easy/1652_defuse_the_bomb.md) | 🟢 easy |
+| 1763 | [Longest Nice Substring](problemas/03_sliding_window/easy/1763_longest_nice_substring.md) | 🟢 easy |
+| 1876 | [Substrings of Size Three with Distinct Characters](problemas/03_sliding_window/easy/1876_substrings_of_size_three_with_distinct_characters.md) | 🟢 easy |
+| 1984 | [Minimum Difference Between Highest and Lowest of K Scores](problemas/03_sliding_window/easy/1984_minimum_difference_between_highest_and_lowest_of_k_scores.md) | 🟢 easy |
+| 2269 | [Find the K-Beauty of a Number](problemas/03_sliding_window/easy/2269_find_the_k_beauty_of_a_number.md) | 🟢 easy |
+| 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](problemas/03_sliding_window/easy/2379_minimum_recolors_to_get_k_consecutive_black_blocks.md) | 🟢 easy |
+| 2760 | [Longest Even Odd Subarray With Threshold](problemas/03_sliding_window/easy/2760_longest_even_odd_subarray_with_threshold.md) | 🟢 easy |
+| 3090 | [Maximum Length Substring With Two Occurrences](problemas/03_sliding_window/easy/3090_maximum_length_substring_with_two_occurrences.md) | 🟢 easy |
+| 3095 | [Shortest Subarray With OR at Least K I](problemas/03_sliding_window/easy/3095_shortest_subarray_with_or_at_least_k_i.md) | 🟢 easy |
+| 3206 | [Alternating Groups I](problemas/03_sliding_window/easy/3206_alternating_groups_i.md) | 🟢 easy |
+| 3258 | [Count Substrings That Satisfy K-Constraint I](problemas/03_sliding_window/easy/3258_count_substrings_that_satisfy_k_constraint_i.md) | 🟢 easy |
+| 3318 | [Find X-Sum of All K-Long Subarrays I](problemas/03_sliding_window/easy/3318_find_x_sum_of_all_k_long_subarrays_i.md) | 🟢 easy |
+| 3364 | [Minimum Positive Sum Subarray](problemas/03_sliding_window/easy/3364_minimum_positive_sum_subarray.md) | 🟢 easy |
+| 3411 | [Maximum Subarray With Equal Products](problemas/03_sliding_window/easy/3411_maximum_subarray_with_equal_products.md) | 🟢 easy |
 
 ## Busca Binária (1)
 
