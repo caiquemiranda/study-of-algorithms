@@ -2,7 +2,7 @@
 
 > Gerado automaticamente por `gerador_de_indice.py` em 2026-07-28. Não edite à mão.
 
-**Total: 234** (🟢 easy: 166 · 🟡 medium: 68 · 🔴 hard: 0)
+**Total: 254** (🟢 easy: 166 · 🟡 medium: 88 · 🔴 hard: 0)
 
 ## Arrays e Hashing (93)
 
@@ -231,7 +231,7 @@
 | 3364 | [Minimum Positive Sum Subarray](problemas/03_sliding_window/easy/3364_minimum_positive_sum_subarray.md) | 🟢 easy |
 | 3411 | [Maximum Subarray With Equal Products](problemas/03_sliding_window/easy/3411_maximum_subarray_with_equal_products.md) | 🟢 easy |
 
-## Stack (19)
+## Stack (39)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -240,9 +240,29 @@
 | 0150 | [Evaluate Reverse Polish Notation](problemas/04_stack/medium/0150_evaluate_reverse_polish_notation.md) | 🟡 medium |
 | 0155 | [Min Stack](problemas/04_stack/medium/0155_min_stack.md) | 🟡 medium |
 | 0225 | [Implement Stack using Queues](problemas/04_stack/easy/0225_implement_stack_using_queues.md) | 🟢 easy |
+| 0227 | [Basic Calculator II](problemas/04_stack/medium/0227_basic_calculator_ii.md) | 🟡 medium |
 | 0232 | [Implement Queue using Stacks](problemas/04_stack/easy/0232_implement_queue_using_stacks.md) | 🟢 easy |
+| 0316 | [Remove Duplicate Letters](problemas/04_stack/medium/0316_remove_duplicate_letters.md) | 🟡 medium |
+| 0385 | [Mini Parser](problemas/04_stack/medium/0385_mini_parser.md) | 🟡 medium |
+| 0388 | [Longest Absolute File Path](problemas/04_stack/medium/0388_longest_absolute_file_path.md) | 🟡 medium |
+| 0394 | [Decode String](problemas/04_stack/medium/0394_decode_string.md) | 🟡 medium |
+| 0402 | [Remove K Digits](problemas/04_stack/medium/0402_remove_k_digits.md) | 🟡 medium |
+| 0456 | [132 Pattern](problemas/04_stack/medium/0456_132_pattern.md) | 🟡 medium |
 | 0496 | [Next Greater Element I](problemas/04_stack/easy/0496_next_greater_element_i.md) | 🟢 easy |
+| 0503 | [Next Greater Element II](problemas/04_stack/medium/0503_next_greater_element_ii.md) | 🟡 medium |
+| 0581 | [Shortest Unsorted Continuous Subarray](problemas/04_stack/medium/0581_shortest_unsorted_continuous_subarray.md) | 🟡 medium |
+| 0636 | [Exclusive Time of Functions](problemas/04_stack/medium/0636_exclusive_time_of_functions.md) | 🟡 medium |
+| 0649 | [Dota2 Senate](problemas/04_stack/medium/0649_dota2_senate.md) | 🟡 medium |
+| 0654 | [Maximum Binary Tree](problemas/04_stack/medium/0654_maximum_binary_tree.md) | 🟡 medium |
+| 0678 | [Valid Parenthesis String](problemas/04_stack/medium/0678_valid_parenthesis_string.md) | 🟡 medium |
 | 0682 | [Baseball Game](problemas/04_stack/easy/0682_baseball_game.md) | 🟢 easy |
+| 0735 | [Asteroid Collision](problemas/04_stack/medium/0735_asteroid_collision.md) | 🟡 medium |
+| 0739 | [Daily Temperatures](problemas/04_stack/medium/0739_daily_temperatures.md) | 🟡 medium |
+| 0769 | [Max Chunks To Make Sorted](problemas/04_stack/medium/0769_max_chunks_to_make_sorted.md) | 🟡 medium |
+| 0853 | [Car Fleet](problemas/04_stack/medium/0853_car_fleet.md) | 🟡 medium |
+| 0856 | [Score of Parentheses](problemas/04_stack/medium/0856_score_of_parentheses.md) | 🟡 medium |
+| 0880 | [Decoded String at Index](problemas/04_stack/medium/0880_decoded_string_at_index.md) | 🟡 medium |
+| 0901 | [Online Stock Span](problemas/04_stack/medium/0901_online_stock_span.md) | 🟡 medium |
 | 0933 | [Number of Recent Calls](problemas/04_stack/easy/0933_number_of_recent_calls.md) | 🟢 easy |
 | 1021 | [Remove Outermost Parentheses](problemas/04_stack/easy/1021_remove_outermost_parentheses.md) | 🟢 easy |
 | 1047 | [Remove All Adjacent Duplicates In String](problemas/04_stack/easy/1047_remove_all_adjacent_duplicates_in_string.md) | 🟢 easy |

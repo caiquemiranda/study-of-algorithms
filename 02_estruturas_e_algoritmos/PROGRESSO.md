@@ -18,7 +18,7 @@
 | 01 | Arrays e Hashing | 🔴 | 93 |
 | 02 | Two Pointers | 🔴 | 61 |
 | 03 | Sliding Window | 🔴 | 58 |
-| 04 | Stack / Monotonic Stack | 🔴 | 19 |
+| 04 | Stack / Monotonic Stack | 🔴 | 39 |
 | 05 | Busca Binária | 🔴 | 1 |
 | 06 | Linked List | 🔴 | 1 |
 | 07 | Árvores | 🔴 | 0 |
@@ -34,7 +34,7 @@
 | 17 | Matemática e Geometria | 🔴 | 1 |
 | 18 | Bit Manipulation | 🔴 | 0 |
 
-## ✅ Problemas resolvidos (234)
+## ✅ Problemas resolvidos (254)
 
 <!-- INICIO:PROBLEMAS-AUTO -->
 | # | Problema | Categoria | Dificuldade | Resolvido em |
@@ -62,18 +62,24 @@
 | 0217 | [Contains Duplicate](problemas/01_arrays_e_hashing/easy/0217_contains_duplicate.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0219 | [Contains Duplicate II](problemas/03_sliding_window/easy/0219_contains_duplicate_ii.md) | Sliding Window | 🟢 easy | 2026-07-27 |
 | 0225 | [Implement Stack using Queues](problemas/04_stack/easy/0225_implement_stack_using_queues.md) | Stack | 🟢 easy | 2026-07-27 |
+| 0227 | [Basic Calculator II](problemas/04_stack/medium/0227_basic_calculator_ii.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0228 | [Summary Ranges](problemas/01_arrays_e_hashing/easy/0228_summary_ranges.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0232 | [Implement Queue using Stacks](problemas/04_stack/easy/0232_implement_queue_using_stacks.md) | Stack | 🟢 easy | 2026-07-27 |
 | 0242 | [Valid Anagram](problemas/01_arrays_e_hashing/easy/0242_valid_anagram.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0283 | [Move Zeroes](problemas/02_two_pointers/easy/0283_move_zeroes.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0290 | [Word Pattern](problemas/01_arrays_e_hashing/easy/0290_word_pattern.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0303 | [Range Sum Query - Immutable](problemas/01_arrays_e_hashing/easy/0303_range_sum_query_immutable.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0316 | [Remove Duplicate Letters](problemas/04_stack/medium/0316_remove_duplicate_letters.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0344 | [Reverse String](problemas/02_two_pointers/easy/0344_reverse_string.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0345 | [Reverse Vowels of a String](problemas/02_two_pointers/easy/0345_reverse_vowels_of_a_string.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0383 | [Ransom Note](problemas/01_arrays_e_hashing/easy/0383_ransom_note.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0385 | [Mini Parser](problemas/04_stack/medium/0385_mini_parser.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0387 | [First Unique Character in a String](problemas/01_arrays_e_hashing/easy/0387_first_unique_character_in_a_string.md) | Arrays e Hashing | 🟢 easy | 2026-07-27 |
+| 0388 | [Longest Absolute File Path](problemas/04_stack/medium/0388_longest_absolute_file_path.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0392 | [Is Subsequence](problemas/02_two_pointers/easy/0392_is_subsequence.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0394 | [Decode String](problemas/04_stack/medium/0394_decode_string.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0395 | [Longest Substring with At Least K Repeating Characters](problemas/03_sliding_window/medium/0395_longest_substring_with_at_least_k_repeating_characters.md) | Sliding Window | 🟡 medium | 2026-07-27 |
+| 0402 | [Remove K Digits](problemas/04_stack/medium/0402_remove_k_digits.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0413 | [Arithmetic Slices](problemas/03_sliding_window/medium/0413_arithmetic_slices.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0414 | [Third Maximum Number](problemas/01_arrays_e_hashing/easy/0414_third_maximum_number.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0424 | [Longest Repeating Character Replacement](problemas/03_sliding_window/medium/0424_longest_repeating_character_replacement.md) | Sliding Window | 🟡 medium | 2026-07-27 |
@@ -81,11 +87,13 @@
 | 0438 | [Find All Anagrams in a String](problemas/03_sliding_window/medium/0438_find_all_anagrams_in_a_string.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0448 | [Find All Numbers Disappeared in an Array](problemas/01_arrays_e_hashing/easy/0448_find_all_numbers_disappeared_in_an_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0455 | [Assign Cookies](problemas/02_two_pointers/easy/0455_assign_cookies.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0456 | [132 Pattern](problemas/04_stack/medium/0456_132_pattern.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0459 | [Repeated Substring Pattern](problemas/01_arrays_e_hashing/easy/0459_repeated_substring_pattern.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0482 | [License Key Formatting](problemas/01_arrays_e_hashing/easy/0482_license_key_formatting.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0485 | [Max Consecutive Ones](problemas/01_arrays_e_hashing/easy/0485_max_consecutive_ones.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0496 | [Next Greater Element I](problemas/04_stack/easy/0496_next_greater_element_i.md) | Stack | 🟢 easy | 2026-07-27 |
 | 0500 | [Keyboard Row](problemas/01_arrays_e_hashing/easy/0500_keyboard_row.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0503 | [Next Greater Element II](problemas/04_stack/medium/0503_next_greater_element_ii.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0520 | [Detect Capital](problemas/01_arrays_e_hashing/easy/0520_detect_capital.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0521 | [Longest Uncommon Subsequence I](problemas/01_arrays_e_hashing/easy/0521_longest_uncommon_subsequence_i.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0541 | [Reverse String II](problemas/02_two_pointers/easy/0541_reverse_string_ii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
@@ -93,11 +101,16 @@
 | 0557 | [Reverse Words in a String III](problemas/02_two_pointers/easy/0557_reverse_words_in_a_string_iii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0567 | [Permutation in String](problemas/03_sliding_window/medium/0567_permutation_in_string.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0575 | [Distribute Candies](problemas/01_arrays_e_hashing/easy/0575_distribute_candies.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0581 | [Shortest Unsorted Continuous Subarray](problemas/04_stack/medium/0581_shortest_unsorted_continuous_subarray.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0594 | [Longest Harmonious Subsequence](problemas/01_arrays_e_hashing/easy/0594_longest_harmonious_subsequence.md) | Arrays e Hashing | 🟢 easy | 2026-07-27 |
 | 0599 | [Minimum Index Sum of Two Lists](problemas/01_arrays_e_hashing/easy/0599_minimum_index_sum_of_two_lists.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0636 | [Exclusive Time of Functions](problemas/04_stack/medium/0636_exclusive_time_of_functions.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0643 | [Maximum Average Subarray I](problemas/03_sliding_window/easy/0643_maximum_average_subarray_i.md) | Sliding Window | 🟢 easy | 2026-07-27 |
+| 0649 | [Dota2 Senate](problemas/04_stack/medium/0649_dota2_senate.md) | Stack | 🟡 medium | 2026-07-28 |
+| 0654 | [Maximum Binary Tree](problemas/04_stack/medium/0654_maximum_binary_tree.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0658 | [Find K Closest Elements](problemas/03_sliding_window/medium/0658_find_k_closest_elements.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0674 | [Longest Continuous Increasing Subsequence](problemas/01_arrays_e_hashing/easy/0674_longest_continuous_increasing_subsequence.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0678 | [Valid Parenthesis String](problemas/04_stack/medium/0678_valid_parenthesis_string.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0680 | [Valid Palindrome II](problemas/02_two_pointers/easy/0680_valid_palindrome_ii.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0682 | [Baseball Game](problemas/04_stack/easy/0682_baseball_game.md) | Stack | 🟢 easy | 2026-07-27 |
 | 0696 | [Count Binary Substrings](problemas/02_two_pointers/easy/0696_count_binary_substrings.md) | Two Pointers | 🟢 easy | 2026-07-26 |
@@ -107,8 +120,11 @@
 | 0717 | [1-bit and 2-bit Characters](problemas/01_arrays_e_hashing/easy/0717_1_bit_and_2_bit_characters.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0718 | [Maximum Length of Repeated Subarray](problemas/03_sliding_window/medium/0718_maximum_length_of_repeated_subarray.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0724 | [Find Pivot Index](problemas/01_arrays_e_hashing/easy/0724_find_pivot_index.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0735 | [Asteroid Collision](problemas/04_stack/medium/0735_asteroid_collision.md) | Stack | 🟡 medium | 2026-07-28 |
+| 0739 | [Daily Temperatures](problemas/04_stack/medium/0739_daily_temperatures.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0747 | [Largest Number At Least Twice of Others](problemas/01_arrays_e_hashing/easy/0747_largest_number_at_least_twice_of_others.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0748 | [Shortest Completing Word](problemas/01_arrays_e_hashing/easy/0748_shortest_completing_word.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0769 | [Max Chunks To Make Sorted](problemas/04_stack/medium/0769_max_chunks_to_make_sorted.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0771 | [Jewels and Stones](problemas/01_arrays_e_hashing/easy/0771_jewels_and_stones.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0796 | [Rotate String](problemas/01_arrays_e_hashing/easy/0796_rotate_string.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0804 | [Unique Morse Code Words](problemas/01_arrays_e_hashing/easy/0804_unique_morse_code_words.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
@@ -120,9 +136,13 @@
 | 0832 | [Flipping an Image](problemas/02_two_pointers/easy/0832_flipping_an_image.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0837 | [New 21 Game](problemas/03_sliding_window/medium/0837_new_21_game.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0844 | [Backspace String Compare](problemas/02_two_pointers/easy/0844_backspace_string_compare.md) | Two Pointers | 🟢 easy | 2026-07-26 |
+| 0853 | [Car Fleet](problemas/04_stack/medium/0853_car_fleet.md) | Stack | 🟡 medium | 2026-07-28 |
+| 0856 | [Score of Parentheses](problemas/04_stack/medium/0856_score_of_parentheses.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0859 | [Buddy Strings](problemas/01_arrays_e_hashing/easy/0859_buddy_strings.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0880 | [Decoded String at Index](problemas/04_stack/medium/0880_decoded_string_at_index.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0884 | [Uncommon Words from Two Sentences](problemas/01_arrays_e_hashing/easy/0884_uncommon_words_from_two_sentences.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
 | 0896 | [Monotonic Array](problemas/01_arrays_e_hashing/easy/0896_monotonic_array.md) | Arrays e Hashing | 🟢 easy | 2026-07-25 |
+| 0901 | [Online Stock Span](problemas/04_stack/medium/0901_online_stock_span.md) | Stack | 🟡 medium | 2026-07-28 |
 | 0904 | [Fruit Into Baskets](problemas/03_sliding_window/medium/0904_fruit_into_baskets.md) | Sliding Window | 🟡 medium | 2026-07-27 |
 | 0905 | [Sort Array By Parity](problemas/02_two_pointers/easy/0905_sort_array_by_parity.md) | Two Pointers | 🟢 easy | 2026-07-26 |
 | 0917 | [Reverse Only Letters](problemas/02_two_pointers/easy/0917_reverse_only_letters.md) | Two Pointers | 🟢 easy | 2026-07-26 |
