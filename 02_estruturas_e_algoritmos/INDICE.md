@@ -1,10 +1,10 @@
 # Índice de Problemas
 
-> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-28. Não edite à mão.
+> Gerado automaticamente por `gerador_de_indice.py` em 2026-07-29. Não edite à mão.
 
-**Total: 314** (🟢 easy: 218 · 🟡 medium: 96 · 🔴 hard: 0)
+**Total: 374** (🟢 easy: 238 · 🟡 medium: 136 · 🔴 hard: 0)
 
-## Arrays e Hashing (99)
+## Arrays e Hashing (102)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -30,10 +30,13 @@
 | 0500 | [Keyboard Row](problemas/01_arrays_e_hashing/easy/0500_keyboard_row.md) | 🟢 easy |
 | 0520 | [Detect Capital](problemas/01_arrays_e_hashing/easy/0520_detect_capital.md) | 🟢 easy |
 | 0521 | [Longest Uncommon Subsequence I](problemas/01_arrays_e_hashing/easy/0521_longest_uncommon_subsequence_i.md) | 🟢 easy |
+| 0532 | [K-diff Pairs in an Array](problemas/01_arrays_e_hashing/medium/0532_k_diff_pairs_in_an_array.md) | 🟡 medium |
 | 0551 | [Student Attendance Record I](problemas/01_arrays_e_hashing/easy/0551_student_attendance_record_i.md) | 🟢 easy |
 | 0575 | [Distribute Candies](problemas/01_arrays_e_hashing/easy/0575_distribute_candies.md) | 🟢 easy |
 | 0594 | [Longest Harmonious Subsequence](problemas/01_arrays_e_hashing/easy/0594_longest_harmonious_subsequence.md) | 🟢 easy |
 | 0599 | [Minimum Index Sum of Two Lists](problemas/01_arrays_e_hashing/easy/0599_minimum_index_sum_of_two_lists.md) | 🟢 easy |
+| 0622 | [Design Circular Queue](problemas/01_arrays_e_hashing/medium/0622_design_circular_queue.md) | 🟡 medium |
+| 0641 | [Design Circular Deque](problemas/01_arrays_e_hashing/medium/0641_design_circular_deque.md) | 🟡 medium |
 | 0674 | [Longest Continuous Increasing Subsequence](problemas/01_arrays_e_hashing/easy/0674_longest_continuous_increasing_subsequence.md) | 🟢 easy |
 | 0697 | [Degree of an Array](problemas/01_arrays_e_hashing/easy/0697_degree_of_an_array.md) | 🟢 easy |
 | 0705 | [Design HashSet](problemas/01_arrays_e_hashing/easy/0705_design_hashset.md) | 🟢 easy |
@@ -108,7 +111,7 @@
 | 1629 | [Slowest Key](problemas/01_arrays_e_hashing/easy/1629_slowest_key.md) | 🟢 easy |
 | 1636 | [Sort Array by Increasing Frequency](problemas/01_arrays_e_hashing/easy/1636_sort_array_by_increasing_frequency.md) | 🟢 easy |
 
-## Two Pointers (61)
+## Two Pointers (65)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -117,6 +120,7 @@
 | 0028 | [Find the Index of the First Occurrence in a String](problemas/02_two_pointers/easy/0028_find_the_index_of_the_first_occurrence_in_a_string.md) | 🟢 easy |
 | 0088 | [Merge Sorted Array](problemas/02_two_pointers/easy/0088_merge_sorted_array.md) | 🟢 easy |
 | 0125 | [Valid Palindrome](problemas/02_two_pointers/easy/0125_valid_palindrome.md) | 🟢 easy |
+| 0167 | [Two Sum II - Input Array Is Sorted](problemas/02_two_pointers/medium/0167_two_sum_ii_input_array_is_sorted.md) | 🟡 medium |
 | 0202 | [Happy Number](problemas/02_two_pointers/easy/0202_happy_number.md) | 🟢 easy |
 | 0283 | [Move Zeroes](problemas/02_two_pointers/easy/0283_move_zeroes.md) | 🟢 easy |
 | 0344 | [Reverse String](problemas/02_two_pointers/easy/0344_reverse_string.md) | 🟢 easy |
@@ -170,9 +174,12 @@
 | 2486 | [Append Characters to String to Make Subsequence](problemas/02_two_pointers/medium/2486_append_characters_to_string_to_make_subsequence.md) | 🟡 medium |
 | 2491 | [Divide Players Into Teams of Equal Skill](problemas/02_two_pointers/medium/2491_divide_players_into_teams_of_equal_skill.md) | 🟡 medium |
 | 2511 | [Maximum Enemy Forts That Can Be Captured](problemas/02_two_pointers/easy/2511_maximum_enemy_forts_that_can_be_captured.md) | 🟢 easy |
+| 2540 | [Minimum Common Value](problemas/02_two_pointers/easy/2540_minimum_common_value.md) | 🟢 easy |
 | 2562 | [Find the Array Concatenation Value](problemas/02_two_pointers/easy/2562_find_the_array_concatenation_value.md) | 🟢 easy |
 | 2570 | [Merge Two 2D Arrays by Summing Values](problemas/02_two_pointers/easy/2570_merge_two_2d_arrays_by_summing_values.md) | 🟢 easy |
 | 2697 | [Lexicographically Smallest Palindrome](problemas/02_two_pointers/easy/2697_lexicographically_smallest_palindrome.md) | 🟢 easy |
+| 2824 | [Count Pairs Whose Sum is Less than Target](problemas/02_two_pointers/easy/2824_count_pairs_whose_sum_is_less_than_target.md) | 🟢 easy |
+| 2970 | [Count the Number of Incremovable Subarrays I](problemas/02_two_pointers/easy/2970_count_the_number_of_incremovable_subarrays_i.md) | 🟢 easy |
 
 ## Sliding Window (58)
 
@@ -237,7 +244,7 @@
 | 3364 | [Minimum Positive Sum Subarray](problemas/03_sliding_window/easy/3364_minimum_positive_sum_subarray.md) | 🟢 easy |
 | 3411 | [Maximum Subarray With Equal Products](problemas/03_sliding_window/easy/3411_maximum_subarray_with_equal_products.md) | 🟢 easy |
 
-## Stack (39)
+## Stack (40)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -270,6 +277,7 @@
 | 0880 | [Decoded String at Index](problemas/04_stack/medium/0880_decoded_string_at_index.md) | 🟡 medium |
 | 0901 | [Online Stock Span](problemas/04_stack/medium/0901_online_stock_span.md) | 🟡 medium |
 | 0933 | [Number of Recent Calls](problemas/04_stack/easy/0933_number_of_recent_calls.md) | 🟢 easy |
+| 1019 | [Next Greater Node In Linked List](problemas/04_stack/medium/1019_next_greater_node_in_linked_list.md) | 🟡 medium |
 | 1021 | [Remove Outermost Parentheses](problemas/04_stack/easy/1021_remove_outermost_parentheses.md) | 🟢 easy |
 | 1047 | [Remove All Adjacent Duplicates In String](problemas/04_stack/easy/1047_remove_all_adjacent_duplicates_in_string.md) | 🟢 easy |
 | 1475 | [Final Prices With a Special Discount in a Shop](problemas/04_stack/easy/1475_final_prices_with_a_special_discount_in_a_shop.md) | 🟢 easy |
@@ -281,17 +289,29 @@
 | 2696 | [Minimum String Length After Removing Substrings](problemas/04_stack/easy/2696_minimum_string_length_after_removing_substrings.md) | 🟢 easy |
 | 3174 | [Clear Digits](problemas/04_stack/easy/3174_clear_digits.md) | 🟢 easy |
 
-## Busca Binária (16)
+## Busca Binária (28)
 
 | # | Problema | Dificuldade |
 |---|---|---|
+| 0033 | [Search in Rotated Sorted Array](problemas/05_busca_binaria/medium/0033_search_in_rotated_sorted_array.md) | 🟡 medium |
+| 0034 | [Find First and Last Position of Element in Sorted Array](problemas/05_busca_binaria/medium/0034_find_first_and_last_position_of_element_in_sorted_array.md) | 🟡 medium |
 | 0035 | [Search Insert Position](problemas/05_busca_binaria/easy/0035_search_insert_position.md) | 🟢 easy |
 | 0069 | [Sqrt(x)](problemas/05_busca_binaria/easy/0069_sqrtx.md) | 🟢 easy |
+| 0074 | [Search a 2D Matrix](problemas/05_busca_binaria/medium/0074_search_a_2d_matrix.md) | 🟡 medium |
+| 0081 | [Search in Rotated Sorted Array II](problemas/05_busca_binaria/medium/0081_search_in_rotated_sorted_array_ii.md) | 🟡 medium |
 | 0153 | [Find Minimum in Rotated Sorted Array](problemas/05_busca_binaria/medium/0153_find_minimum_in_rotated_sorted_array.md) | 🟡 medium |
+| 0162 | [Find Peak Element](problemas/05_busca_binaria/medium/0162_find_peak_element.md) | 🟡 medium |
+| 0240 | [Search a 2D Matrix II](problemas/05_busca_binaria/medium/0240_search_a_2d_matrix_ii.md) | 🟡 medium |
+| 0275 | [H-Index II](problemas/05_busca_binaria/medium/0275_h_index_ii.md) | 🟡 medium |
 | 0278 | [First Bad Version](problemas/05_busca_binaria/easy/0278_first_bad_version.md) | 🟢 easy |
+| 0287 | [Find the Duplicate Number](problemas/05_busca_binaria/medium/0287_find_the_duplicate_number.md) | 🟡 medium |
 | 0367 | [Valid Perfect Square](problemas/05_busca_binaria/easy/0367_valid_perfect_square.md) | 🟢 easy |
 | 0374 | [Guess Number Higher or Lower](problemas/05_busca_binaria/easy/0374_guess_number_higher_or_lower.md) | 🟢 easy |
 | 0441 | [Arranging Coins](problemas/05_busca_binaria/easy/0441_arranging_coins.md) | 🟢 easy |
+| 0475 | [Heaters](problemas/05_busca_binaria/medium/0475_heaters.md) | 🟡 medium |
+| 0497 | [Random Point in Non-overlapping Rectangles](problemas/05_busca_binaria/medium/0497_random_point_in_non_overlapping_rectangles.md) | 🟡 medium |
+| 0528 | [Random Pick with Weight](problemas/05_busca_binaria/medium/0528_random_pick_with_weight.md) | 🟡 medium |
+| 0540 | [Single Element in a Sorted Array](problemas/05_busca_binaria/medium/0540_single_element_in_a_sorted_array.md) | 🟡 medium |
 | 0704 | [Binary Search](problemas/05_busca_binaria/easy/0704_binary_search.md) | 🟢 easy |
 | 0744 | [Find Smallest Letter Greater Than Target](problemas/05_busca_binaria/easy/0744_find_smallest_letter_greater_than_target.md) | 🟢 easy |
 | 1351 | [Count Negative Numbers in a Sorted Matrix](problemas/05_busca_binaria/easy/1351_count_negative_numbers_in_a_sorted_matrix.md) | 🟢 easy |
@@ -302,7 +322,7 @@
 | 2389 | [Longest Subsequence With Limited Sum](problemas/05_busca_binaria/easy/2389_longest_subsequence_with_limited_sum.md) | 🟢 easy |
 | 2529 | [Maximum Count of Positive Integer and Negative Integer](problemas/05_busca_binaria/easy/2529_maximum_count_of_positive_integer_and_negative_integer.md) | 🟢 easy |
 
-## Linked List (17)
+## Linked List (30)
 
 | # | Problema | Dificuldade |
 |---|---|---|
@@ -315,20 +335,37 @@
 | 0083 | [Remove Duplicates from Sorted List](problemas/06_linked_list/easy/0083_remove_duplicates_from_sorted_list.md) | 🟢 easy |
 | 0086 | [Partition List](problemas/06_linked_list/medium/0086_partition_list.md) | 🟡 medium |
 | 0092 | [Reverse Linked List II](problemas/06_linked_list/medium/0092_reverse_linked_list_ii.md) | 🟡 medium |
+| 0138 | [Copy List with Random Pointer](problemas/06_linked_list/medium/0138_copy_list_with_random_pointer.md) | 🟡 medium |
 | 0141 | [Linked List Cycle](problemas/06_linked_list/easy/0141_linked_list_cycle.md) | 🟢 easy |
 | 0142 | [Linked List Cycle II](problemas/06_linked_list/medium/0142_linked_list_cycle_ii.md) | 🟡 medium |
+| 0143 | [Reorder List](problemas/06_linked_list/medium/0143_reorder_list.md) | 🟡 medium |
+| 0146 | [LRU Cache](problemas/06_linked_list/medium/0146_lru_cache.md) | 🟡 medium |
+| 0147 | [Insertion Sort List](problemas/06_linked_list/medium/0147_insertion_sort_list.md) | 🟡 medium |
+| 0148 | [Sort List](problemas/06_linked_list/medium/0148_sort_list.md) | 🟡 medium |
 | 0160 | [Intersection of Two Linked Lists](problemas/06_linked_list/easy/0160_intersection_of_two_linked_lists.md) | 🟢 easy |
 | 0203 | [Remove Linked List Elements](problemas/06_linked_list/easy/0203_remove_linked_list_elements.md) | 🟢 easy |
 | 0206 | [Reverse Linked List](problemas/06_linked_list/easy/0206_reverse_linked_list.md) | 🟢 easy |
 | 0234 | [Palindrome Linked List](problemas/06_linked_list/easy/0234_palindrome_linked_list.md) | 🟢 easy |
+| 0237 | [Delete Node in a Linked List](problemas/06_linked_list/medium/0237_delete_node_in_a_linked_list.md) | 🟡 medium |
+| 0328 | [Odd Even Linked List](problemas/06_linked_list/medium/0328_odd_even_linked_list.md) | 🟡 medium |
+| 0382 | [Linked List Random Node](problemas/06_linked_list/medium/0382_linked_list_random_node.md) | 🟡 medium |
+| 0430 | [Flatten a Multilevel Doubly Linked List](problemas/06_linked_list/medium/0430_flatten_a_multilevel_doubly_linked_list.md) | 🟡 medium |
+| 0445 | [Add Two Numbers II](problemas/06_linked_list/medium/0445_add_two_numbers_ii.md) | 🟡 medium |
+| 0707 | [Design Linked List](problemas/06_linked_list/medium/0707_design_linked_list.md) | 🟡 medium |
+| 0725 | [Split Linked List in Parts](problemas/06_linked_list/medium/0725_split_linked_list_in_parts.md) | 🟡 medium |
+| 0817 | [Linked List Components](problemas/06_linked_list/medium/0817_linked_list_components.md) | 🟡 medium |
 | 0876 | [Middle of the Linked List](problemas/06_linked_list/easy/0876_middle_of_the_linked_list.md) | 🟢 easy |
 | 1290 | [Convert Binary Number in a Linked List to Integer](problemas/06_linked_list/easy/1290_convert_binary_number_in_a_linked_list_to_integer.md) | 🟢 easy |
 
-## Árvores (21)
+## Árvores (44)
 
 | # | Problema | Dificuldade |
 |---|---|---|
 | 0094 | [Binary Tree Inorder Traversal](problemas/07_arvores/easy/0094_binary_tree_inorder_traversal.md) | 🟢 easy |
+| 0095 | [Unique Binary Search Trees II](problemas/07_arvores/medium/0095_unique_binary_search_trees_ii.md) | 🟡 medium |
+| 0096 | [Unique Binary Search Trees](problemas/07_arvores/medium/0096_unique_binary_search_trees.md) | 🟡 medium |
+| 0098 | [Validate Binary Search Tree](problemas/07_arvores/medium/0098_validate_binary_search_tree.md) | 🟡 medium |
+| 0099 | [Recover Binary Search Tree](problemas/07_arvores/medium/0099_recover_binary_search_tree.md) | 🟡 medium |
 | 0100 | [Same Tree](problemas/07_arvores/easy/0100_same_tree.md) | 🟢 easy |
 | 0101 | [Symmetric Tree](problemas/07_arvores/easy/0101_symmetric_tree.md) | 🟢 easy |
 | 0104 | [Maximum Depth of Binary Tree](problemas/07_arvores/easy/0104_maximum_depth_of_binary_tree.md) | 🟢 easy |
@@ -337,6 +374,9 @@
 | 0110 | [Balanced Binary Tree](problemas/07_arvores/easy/0110_balanced_binary_tree.md) | 🟢 easy |
 | 0111 | [Minimum Depth of Binary Tree](problemas/07_arvores/easy/0111_minimum_depth_of_binary_tree.md) | 🟢 easy |
 | 0112 | [Path Sum](problemas/07_arvores/easy/0112_path_sum.md) | 🟢 easy |
+| 0114 | [Flatten Binary Tree to Linked List](problemas/07_arvores/medium/0114_flatten_binary_tree_to_linked_list.md) | 🟡 medium |
+| 0116 | [Populating Next Right Pointers in Each Node](problemas/07_arvores/medium/0116_populating_next_right_pointers_in_each_node.md) | 🟡 medium |
+| 0117 | [Populating Next Right Pointers in Each Node II](problemas/07_arvores/medium/0117_populating_next_right_pointers_in_each_node_ii.md) | 🟡 medium |
 | 0144 | [Binary Tree Preorder Traversal](problemas/07_arvores/easy/0144_binary_tree_preorder_traversal.md) | 🟢 easy |
 | 0145 | [Binary Tree Postorder Traversal](problemas/07_arvores/easy/0145_binary_tree_postorder_traversal.md) | 🟢 easy |
 | 0226 | [Invert Binary Tree](problemas/07_arvores/easy/0226_invert_binary_tree.md) | 🟢 easy |
@@ -349,18 +389,48 @@
 | 0563 | [Binary Tree Tilt](problemas/07_arvores/easy/0563_binary_tree_tilt.md) | 🟢 easy |
 | 0572 | [Subtree of Another Tree](problemas/07_arvores/easy/0572_subtree_of_another_tree.md) | 🟢 easy |
 | 0589 | [N-ary Tree Preorder Traversal](problemas/07_arvores/easy/0589_n_ary_tree_preorder_traversal.md) | 🟢 easy |
+| 0590 | [N-ary Tree Postorder Traversal](problemas/07_arvores/easy/0590_n_ary_tree_postorder_traversal.md) | 🟢 easy |
+| 0617 | [Merge Two Binary Trees](problemas/07_arvores/easy/0617_merge_two_binary_trees.md) | 🟢 easy |
+| 0637 | [Average of Levels in Binary Tree](problemas/07_arvores/easy/0637_average_of_levels_in_binary_tree.md) | 🟢 easy |
+| 0653 | [Two Sum IV - Input is a BST](problemas/07_arvores/easy/0653_two_sum_iv_input_is_a_bst.md) | 🟢 easy |
+| 0671 | [Second Minimum Node In a Binary Tree](problemas/07_arvores/easy/0671_second_minimum_node_in_a_binary_tree.md) | 🟢 easy |
+| 0700 | [Search in a Binary Search Tree](problemas/07_arvores/easy/0700_search_in_a_binary_search_tree.md) | 🟢 easy |
+| 0783 | [Minimum Distance Between BST Nodes](problemas/07_arvores/easy/0783_minimum_distance_between_bst_nodes.md) | 🟢 easy |
+| 0872 | [Leaf-Similar Trees](problemas/07_arvores/easy/0872_leaf_similar_trees.md) | 🟢 easy |
+| 0897 | [Increasing Order Search Tree](problemas/07_arvores/easy/0897_increasing_order_search_tree.md) | 🟢 easy |
+| 0938 | [Range Sum of BST](problemas/07_arvores/easy/0938_range_sum_of_bst.md) | 🟢 easy |
+| 0965 | [Univalued Binary Tree](problemas/07_arvores/easy/0965_univalued_binary_tree.md) | 🟢 easy |
+| 0993 | [Cousins in Binary Tree](problemas/07_arvores/easy/0993_cousins_in_binary_tree.md) | 🟢 easy |
+| 1022 | [Sum of Root To Leaf Binary Numbers](problemas/07_arvores/easy/1022_sum_of_root_to_leaf_binary_numbers.md) | 🟢 easy |
+| 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](problemas/07_arvores/easy/1379_find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree.md) | 🟢 easy |
+| 2236 | [Root Equals Sum of Children](problemas/07_arvores/easy/2236_root_equals_sum_of_children.md) | 🟢 easy |
+| 2331 | [Evaluate Boolean Binary Tree](problemas/07_arvores/easy/2331_evaluate_boolean_binary_tree.md) | 🟢 easy |
 
-## Heap / Priority Queue (1)
+## Heap / Priority Queue (2)
 
 | # | Problema | Dificuldade |
 |---|---|---|
+| 0355 | [Design Twitter](problemas/09_heap_priority_queue/medium/0355_design_twitter.md) | 🟡 medium |
 | 3507 | [Minimum Pair Removal to Sort Array I](problemas/09_heap_priority_queue/easy/3507_minimum_pair_removal_to_sort_array_i.md) | 🟢 easy |
 
-## Matemática e Geometria (1)
+## Programação Dinâmica 1D (1)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 0300 | [Longest Increasing Subsequence](problemas/13_programacao_dinamica_1d/medium/0300_longest_increasing_subsequence.md) | 🟡 medium |
+
+## Greedy (1)
+
+| # | Problema | Dificuldade |
+|---|---|---|
+| 3633 | [Earliest Finish Time for Land and Water Rides I](problemas/15_greedy/easy/3633_earliest_finish_time_for_land_and_water_rides_i.md) | 🟢 easy |
+
+## Matemática e Geometria (2)
 
 | # | Problema | Dificuldade |
 |---|---|---|
 | 0009 | [Palindrome Number](problemas/17_matematica_e_geometria/easy/0009_palindrome_number.md) | 🟢 easy |
+| 0400 | [Nth Digit](problemas/17_matematica_e_geometria/medium/0400_nth_digit.md) | 🟡 medium |
 
 ## Bit Manipulation (1)
 
