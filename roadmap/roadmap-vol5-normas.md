@@ -2,7 +2,7 @@
 
 > ISO 25010, CMMI/MPS.BR, ISO 29119, OWASP, métricas de código, acessibilidade, LGPD/GDPR/CRA, sistemas críticos (IEC 61508/62443), IA e governança de TI.
 >
-> Documento consolidado, gerado das pastas `06_normas_e_legislacao/` em 2026-07-24. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
+> Documento consolidado, gerado das pastas `06_normas_e_legislacao/` em 2026-08-05. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
 
 ## Índice deste volume
 

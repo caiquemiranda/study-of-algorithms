@@ -2,7 +2,7 @@
 
 > Alta disponibilidade, multi-tenancy, legados, FinOps, ADRs, comunicação com stakeholders e governança.
 >
-> Documento consolidado, gerado das pastas `05_arquiteto/` em 2026-07-24. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
+> Documento consolidado, gerado das pastas `05_arquiteto/` em 2026-08-05. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
 
 ## Índice deste volume
 

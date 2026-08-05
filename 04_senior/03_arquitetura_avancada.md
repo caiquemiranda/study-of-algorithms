@@ -10,6 +10,12 @@
 - [ ] **Clean Architecture** — a regra de dependência apontando para dentro
 - [ ] Onion Architecture
 - [ ] **DDD (Domain-Driven Design)**: entidade, value object, agregado, repositório, serviço de domínio, bounded context, linguagem ubíqua
+  - [ ] **Context Map** — desenhar as relações entre bounded contexts (Partnership, Shared Kernel, Customer-Supplier, Conformist, Anticorruption Layer) — sem isso o "bounded context" fica um conceito solto, sem mostrar onde um módulo invade o outro
+  - [ ] **EventStorming** — workshop com pós-its laranjas (eventos de domínio) para descobrir o modelo junto com quem entende do negócio, antes de escrever uma linha de código; big picture → process modeling → design level
+  - [ ] **Domain Storytelling** — narrar o processo de negócio como uma história (atores → ações → objetos) para validar que você entendeu o fluxo real, não o que você *acha* que é o fluxo
+  - [ ] **User Story Mapping** — organizar histórias de usuário por jornada (eixo horizontal) e prioridade (eixo vertical) — expõe buracos de escopo que uma lista plana de backlog esconde
+  - [ ] **Business Model Canvas** — visão de uma página do modelo de negócio (proposta de valor, canais, receita, custo); útil para o arquiteto entender **por que** o sistema existe antes de desenhar **como**
+  - [ ] Quando usar cada um: EventStorming para descobrir o domínio, Context Map para desenhar fronteiras entre times/sistemas, Story Mapping para fatiar entrega — ferramentas complementares, não concorrentes
 - [ ] **CQRS** — separar modelo de leitura e escrita
 - [ ] **Event Sourcing** — estado como sequência de eventos
 - [ ] MVC, MVP, MVVM (contexto)
@@ -54,6 +60,7 @@
 - ⭐ *Clean Architecture* — **Robert C. Martin** — a explicação mais clara de dependência e fronteira
 - *Design Patterns* (GoF) — Gamma, Helm, Johnson & Vlissides — o original (denso); **alternativa mais leve:** *Head First Design Patterns* (Freeman) ou o site Refactoring.Guru (excelente e em PT-BR)
 - *Domain-Driven Design* — Eric Evans (o "livro azul"; denso) — **comece por** *Implementing Domain-Driven Design* (Vaughn Vernon) ou *Learning DDD* (Vlad Khononov)
+- *Introducing EventStorming* — Alberto Brandolini (o criador da técnica; também em [eventstorming.com](https://www.eventstorming.com/), gratuito)
 - *Patterns of Enterprise Application Architecture* — Martin Fowler
 - *Building Microservices* — **Sam Newman** (2ª ed.) — honesto sobre os custos
 - *Monolith to Microservices* — Sam Newman

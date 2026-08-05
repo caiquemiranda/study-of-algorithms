@@ -2,7 +2,7 @@
 
 > Os 7 projetos que integram tudo: do mini-framework web ao capstone de monitoramento predial.
 >
-> Documento consolidado, gerado das pastas `07_projetos/` em 2026-07-24. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
+> Documento consolidado, gerado das pastas `07_projetos/` em 2026-08-05. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
 
 ## Índice deste volume
 

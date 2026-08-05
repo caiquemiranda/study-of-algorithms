@@ -2,7 +2,7 @@
 
 > Fundamentos: ferramentas, computação, SQL, APIs, Java/Spring, testes, debugging — mais a teoria da trilha de Estruturas de Dados e Algoritmos.
 >
-> Documento consolidado, gerado das pastas `01_junior`, `02_estruturas_e_algoritmos/` em 2026-07-24. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
+> Documento consolidado, gerado das pastas `01_junior`, `02_estruturas_e_algoritmos/` em 2026-08-05. **Edite as pastas, não este arquivo** — regenere com `python roadmap/gerar_volumes.py`. Método de estudo e marcação 🔴🟡🟢: ver `METODO.md`.
 
 ## Índice deste volume
 
